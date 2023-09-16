@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2023-09-16T22:05:06 IST" name="Default suite" finished-at="2023-09-16T22:05:28 IST" duration-ms="21832">
+    <groups>
+    </groups>
+    <test started-at="2023-09-16T22:05:06 IST" name="Default test" finished-at="2023-09-16T22:05:28 IST" duration-ms="21832">
+      <class name="loginTests.TestOrangeUserLogin">
+        <test-method is-config="true" signature="setup()[pri:0, instance:loginTests.TestOrangeUserLogin@28dcca0c]" started-at="2023-09-16T22:05:06 IST" name="setup" finished-at="2023-09-16T22:05:19 IST" duration-ms="12429" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="testValidAdminLogin(java.util.HashMap)[pri:0, instance:loginTests.TestOrangeUserLogin@28dcca0c]" started-at="2023-09-16T22:05:20 IST" name="testValidAdminLogin" data-provider="getDataFromExcel" finished-at="2023-09-16T22:05:24 IST" duration-ms="3917" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{Username=Admin, Password=admin123}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testValidAdminLogin -->
+        <test-method is-config="true" signature="recordFailure(org.testng.ITestResult)[pri:0, instance:loginTests.TestOrangeUserLogin@28dcca0c]" started-at="2023-09-16T22:05:24 IST" name="recordFailure" finished-at="2023-09-16T22:05:24 IST" duration-ms="2" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testValidAdminLogin status=SUCCESS method=TestOrangeUserLogin.testValidAdminLogin(java.util.HashMap)[pri:0, instance:loginTests.TestOrangeUserLogin@28dcca0c] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- recordFailure -->
+        <test-method signature="testValidAdminLogin(java.util.HashMap)[pri:0, instance:loginTests.TestOrangeUserLogin@28dcca0c]" started-at="2023-09-16T22:05:24 IST" name="testValidAdminLogin" data-provider="getDataFromExcel" finished-at="2023-09-16T22:05:28 IST" duration-ms="3860" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{Username=admin, Password=admin123}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testValidAdminLogin -->
+        <test-method is-config="true" signature="recordFailure(org.testng.ITestResult)[pri:0, instance:loginTests.TestOrangeUserLogin@28dcca0c]" started-at="2023-09-16T22:05:28 IST" name="recordFailure" finished-at="2023-09-16T22:05:28 IST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testValidAdminLogin status=SUCCESS method=TestOrangeUserLogin.testValidAdminLogin(java.util.HashMap)[pri:0, instance:loginTests.TestOrangeUserLogin@28dcca0c] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- recordFailure -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:loginTests.TestOrangeUserLogin@28dcca0c]" started-at="2023-09-16T22:05:28 IST" name="tearDown" finished-at="2023-09-16T22:05:28 IST" duration-ms="371" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- loginTests.TestOrangeUserLogin -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
