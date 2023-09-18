@@ -15,7 +15,7 @@ public class O_HomePage {
 
 	public O_HomePage(WebDriver driver) {
 		this.driver = driver;
-		wait = new WebDriverWait(driver, Duration.ofSeconds(5));
+		wait = new WebDriverWait(driver, Duration.ofSeconds(10));
 	}
 
 	public O_PIMPage clickPIMLink() {

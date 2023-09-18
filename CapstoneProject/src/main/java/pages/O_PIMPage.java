@@ -23,4 +23,13 @@ public class O_PIMPage {
 		return new O_AddEmployeePage(driver);
 	}
 
+	public boolean isTabPresent(String tabName) {
+
+		String tabXpath = "//a[text()='" + tabName + "']";
+		By tabLocator = By.xpath(tabXpath);
+		wait.until(ExpectedConditions.presenceOfElementLocated(tabLocator));
+		return driver.findElement(tabLocator).isDisplayed();
+
+	}
+
 }

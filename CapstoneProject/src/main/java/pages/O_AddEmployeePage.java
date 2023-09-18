@@ -61,10 +61,14 @@ public class O_AddEmployeePage {
 	public void setConfirmPassword(String password) {
 		driver.findElement(confirmPasswordField).sendKeys(password);
 	}
-
-	public String getEmployeeId() {
-		return driver.findElement(employeeIdField).getText();
+	
+	public void setEmployeeId(String employeeId) {
+		driver.findElement(employeeIdField).sendKeys(employeeId);
 	}
+	/*
+	 * public String getEmployeeId() { return
+	 * driver.findElement(employeeIdField).getText(); }
+	 */
 
 	public O_HomePage goToHome() {
 		driver.navigate().to(dashBoard);

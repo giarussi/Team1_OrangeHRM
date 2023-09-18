@@ -3,14 +3,15 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="loginTests.TestOrangeUserLogin">
+      <class name="pimTests.TestPIMFunctionality">
         <methods>
           <include name="setup"/>
           <include name="tearDown"/>
-          <include name="testValidAdminLogin"/>
+          <include name="testCreateUser"/>
+          <include name="testCustomUserLogin"/>
           <include name="recordFailure"/>
         </methods>
-      </class> <!-- loginTests.TestOrangeUserLogin -->
+      </class> <!-- pimTests.TestPIMFunctionality -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
