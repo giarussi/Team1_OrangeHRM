@@ -1,80 +1,43 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-09-18T11:24:31 IST" name="Default suite" finished-at="2023-09-18T11:25:05 IST" duration-ms="33420">
+  <suite started-at="2023-09-18T18:10:11 IST" name="Default suite" finished-at="2023-09-18T18:10:29 IST" duration-ms="17656">
     <groups>
     </groups>
-    <test started-at="2023-09-18T11:24:31 IST" name="Default test" finished-at="2023-09-18T11:25:05 IST" duration-ms="33420">
-      <class name="pimTests.TestPIMFunctionality">
-        <test-method is-config="true" signature="setup()[pri:0, instance:pimTests.TestPIMFunctionality@28dcca0c]" started-at="2023-09-18T11:24:31 IST" name="setup" finished-at="2023-09-18T11:24:42 IST" duration-ms="11097" status="PASS">
+    <test started-at="2023-09-18T18:10:11 IST" name="Default test" finished-at="2023-09-18T18:10:29 IST" duration-ms="17656">
+      <class name="homePageTests.TestHomePageSections">
+        <test-method is-config="true" signature="setup()[pri:0, instance:homePageTests.TestHomePageSections@28dcca0c]" started-at="2023-09-18T18:10:11 IST" name="setup" finished-at="2023-09-18T18:10:23 IST" duration-ms="12392" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="testCreateUser(java.util.HashMap)[pri:0, instance:pimTests.TestPIMFunctionality@28dcca0c]" started-at="2023-09-18T11:24:43 IST" name="testCreateUser" data-provider="getDataFromExcel" finished-at="2023-09-18T11:24:57 IST" duration-ms="13937" status="PASS">
+        <test-method signature="testDashboardSections(java.util.HashMap)[pri:0, instance:homePageTests.TestHomePageSections@28dcca0c]" started-at="2023-09-18T18:10:24 IST" name="testDashboardSections" data-provider="getDataFromExcel" finished-at="2023-09-18T18:10:28 IST" duration-ms="4162" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[{Username=Admin, Password=admin123, FirstName=Harry, MiddleName=James, LastName=Potter}]]>
+                <![CDATA[{Username=Admin, Password=admin123, Sections=Time at Work;My Actions;Quick Launch;Buzz Latest Posts;Employees on Leave Today;Employee Distribution by Sub Unit;Employee Distribution by Location}]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testCreateUser -->
-        <test-method is-config="true" signature="recordFailure(org.testng.ITestResult)[pri:0, instance:pimTests.TestPIMFunctionality@28dcca0c]" started-at="2023-09-18T11:24:57 IST" name="recordFailure" finished-at="2023-09-18T11:24:57 IST" duration-ms="1" status="PASS">
+        </test-method> <!-- testDashboardSections -->
+        <test-method is-config="true" signature="recordFailure(org.testng.ITestResult)[pri:0, instance:homePageTests.TestHomePageSections@28dcca0c]" started-at="2023-09-18T18:10:28 IST" name="recordFailure" finished-at="2023-09-18T18:10:28 IST" duration-ms="0" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=testCreateUser status=SUCCESS method=TestPIMFunctionality.testCreateUser(java.util.HashMap)[pri:0, instance:pimTests.TestPIMFunctionality@28dcca0c] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- recordFailure -->
-        <test-method signature="testPIMPageLinks(java.util.HashMap)[pri:0, instance:pimTests.TestPIMFunctionality@28dcca0c]" started-at="2023-09-18T11:24:57 IST" name="testPIMPageLinks" data-provider="getDataFromExcel" finished-at="2023-09-18T11:25:02 IST" duration-ms="5045" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[{Username=Admin, Password=admin123, TabNames=Employee List;Add Employee;Reports}]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testPIMPageLinks -->
-        <test-method is-config="true" signature="recordFailure(org.testng.ITestResult)[pri:0, instance:pimTests.TestPIMFunctionality@28dcca0c]" started-at="2023-09-18T11:25:02 IST" name="recordFailure" finished-at="2023-09-18T11:25:02 IST" duration-ms="0" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=testPIMPageLinks status=SUCCESS method=TestPIMFunctionality.testPIMPageLinks(java.util.HashMap)[pri:0, instance:pimTests.TestPIMFunctionality@28dcca0c] output={null}]]]>
+                <![CDATA[[TestResult name=testDashboardSections status=SUCCESS method=TestHomePageSections.testDashboardSections(java.util.HashMap)[pri:0, instance:homePageTests.TestHomePageSections@28dcca0c] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- recordFailure -->
-        <test-method signature="testCustomUserLogin()[pri:0, instance:pimTests.TestPIMFunctionality@28dcca0c]" started-at="2023-09-18T11:25:02 IST" name="testCustomUserLogin" finished-at="2023-09-18T11:25:04 IST" depends-on-methods="pimTests.TestPIMFunctionality.testCreateUser" duration-ms="2265" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testCustomUserLogin -->
-        <test-method is-config="true" signature="recordFailure(org.testng.ITestResult)[pri:0, instance:pimTests.TestPIMFunctionality@28dcca0c]" started-at="2023-09-18T11:25:04 IST" name="recordFailure" finished-at="2023-09-18T11:25:04 IST" duration-ms="1" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=testCustomUserLogin status=SUCCESS method=TestPIMFunctionality.testCustomUserLogin()[pri:0, instance:pimTests.TestPIMFunctionality@28dcca0c] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- recordFailure -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:pimTests.TestPIMFunctionality@28dcca0c]" started-at="2023-09-18T11:25:04 IST" name="tearDown" finished-at="2023-09-18T11:25:05 IST" duration-ms="255" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:homePageTests.TestHomePageSections@28dcca0c]" started-at="2023-09-18T18:10:28 IST" name="tearDown" finished-at="2023-09-18T18:10:29 IST" duration-ms="241" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- pimTests.TestPIMFunctionality -->
+      </class> <!-- homePageTests.TestHomePageSections -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

@@ -48,4 +48,11 @@ public class O_HomePage {
 		wait.until(ExpectedConditions.presenceOfElementLocated(logo));
 		return driver.findElement(logo).isDisplayed();
 	}
+
+	public boolean isSectionPresent(String sectionName) {
+		String sectionXpath = "//p[text()='" + sectionName + "']";
+		By sectionLocator = By.xpath(sectionXpath);
+		wait.until(ExpectedConditions.presenceOfElementLocated(sectionLocator));
+		return driver.findElement(sectionLocator).isDisplayed();
+	}
 }
