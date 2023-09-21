@@ -26,7 +26,8 @@ public class O_ClaimPage {
 	private By dropdown=By.className( "oxd-select-text-input");
 	private By submit=By.cssSelector("button[type='submit']");
 	private By cancel=By.xpath("//button[normalize-space()='Cancel']");
-	
+	private By currency_select=By.xpath("//span[text()='Afghanistan Afghani']");
+
 	
     
 	WebDriverWait wait;
@@ -82,6 +83,10 @@ public class O_ClaimPage {
 	public void currencySelect() throws InterruptedException {
 		List<WebElement> elements = driver.findElements(dropdown);
 	    System.out.println("Number of elements:" +elements.size());
+	    
+	    wait.until(ExpectedConditions.presenceOfElementLocated(currency_select));
+	    
+	  ////span[text()='Afghanistan Afghani']
 	    elements.get(1).click();
 	    elements.get(1).sendKeys(Keys.ARROW_DOWN);
         Thread.sleep(1000);

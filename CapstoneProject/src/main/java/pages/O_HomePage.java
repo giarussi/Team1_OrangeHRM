@@ -55,4 +55,15 @@ public class O_HomePage {
 		wait.until(ExpectedConditions.presenceOfElementLocated(sectionLocator));
 		return driver.findElement(sectionLocator).isDisplayed();
 	}
+	
+	
+	/**
+	 * Clicks on the claim page 
+	 * 
+	 * @return
+	 */
+	public O_ClaimPage clickClaimLink() {
+		clickLink("Claim");
+		return new O_ClaimPage(driver);
+	}
 }
