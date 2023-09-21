@@ -78,4 +78,24 @@ public class O_LoginPage {
 		return driver.findElement(invalidLoginMsg).isDisplayed();
 	}
 
+
+/**
+
+	 * Clicks on the claim page
+
+	 *
+
+	 * @return
+
+	 */
+
+	public O_ClaimPage clickClaimLink() {
+
+		driver.findElement(claim).click();
+
+		return new O_ClaimPage(driver);
+
+	}
+
+
 }
