@@ -3,15 +3,15 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="pimTests.TestPIMFunctionality">
+      <class name="claimTests.TestOrangeCreateClaim">
         <methods>
           <include name="setup"/>
           <include name="tearDown"/>
-          <include name="testCreateUser"/>
-          <include name="testCustomUserLogin"/>
+          <include name="testCreateClaim" invocation-numbers="0"/>
+          <include name="testCancelclaim" invocation-numbers="0"/>
           <include name="recordFailure"/>
         </methods>
-      </class> <!-- pimTests.TestPIMFunctionality -->
+      </class> <!-- claimTests.TestOrangeCreateClaim -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

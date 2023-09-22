@@ -1,4 +1,4 @@
-package loginTests;
+package claimTests;
 
 import static org.testng.Assert.assertTrue;
 
@@ -16,7 +16,7 @@ public class TestOrangeCreateClaim extends BaseTest {
 
 	//Create claim after login 
 	@Test(enabled = true, dataProvider = "getDataFromExcel")
-	public void testCreateClaim(HashMap<String, String> data) {
+	public void testCreateClaim(HashMap<String, String> data) throws InterruptedException {
 		boolean isMsgPresent;
 		loginPage.setUserName(data.get("Username"));
 		loginPage.setPassword(data.get("Password"));
@@ -29,10 +29,13 @@ public class TestOrangeCreateClaim extends BaseTest {
 		claimPage.clickClaim();
 		softAssert.assertEquals("Claim", claimPage.isLogoDisplayed(), "Claim is not visible");
 		System.out.println(claimPage.isLogoDisplayed());
-		claimPage.eventSelect();
-		claimPage.currencySelect();
-		// claimPage.cancelBtn();
+		claimPage.eventSelect(data.get("Event_select"));
+		
+		claimPage.currencySelect(data.get("Currency_select"));
+
 		claimPage.createBtn();
+		softAssert.assertEquals("Submit Claim", claimPage.isclaimPresent(), "Claim is not present");
+		
 		loginPage = homePage.logout();
 
 		softAssert.assertAll();
@@ -41,7 +44,7 @@ public class TestOrangeCreateClaim extends BaseTest {
 
 	// Create claim and click on cancel
 	@Test(enabled = true, dataProvider = "getDataFromExcel")
-	public void testCancelclaim(HashMap<String, String> data) {
+	public void testCancelclaim(HashMap<String, String> data) throws InterruptedException {
 		boolean isMsgPresent;
 		loginPage.setUserName(data.get("Username"));
 		loginPage.setPassword(data.get("Password"));
@@ -54,10 +57,9 @@ public class TestOrangeCreateClaim extends BaseTest {
 		claimPage.clickClaim();
 		softAssert.assertEquals("Claim", claimPage.isLogoDisplayed(), "Claim is not visible");
 		System.out.println(claimPage.isLogoDisplayed());
-		claimPage.eventSelect();
-		claimPage.currencySelect();
+		claimPage.eventSelect(data.get("Event_select"));
+		claimPage.currencySelect(data.get("Currency_select"));
 		claimPage.cancelBtn();
-		// claimPage.createBtn();
 		loginPage = homePage.logout();
 
 		softAssert.assertAll();

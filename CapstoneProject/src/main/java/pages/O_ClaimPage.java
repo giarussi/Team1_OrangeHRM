@@ -15,19 +15,22 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 public class O_ClaimPage {
 
 	private WebDriver driver;
+	private String eventname; 
 	private By submitclaim = By.linkText("Submit Claim");
 	private By headerField = By.xpath("//div[@class='oxd-topbar-header-title']");
 	private By submitButton = By.tagName("button");
 	private By claimrequest =By.xpath("//h6[normalize-space()='Create Claim Request']");
-	private By event =By.xpath("(//div[@class='oxd-select-text oxd-select-text--active'])[1]");
-	private By currency =By.xpath("//div[contains(text(),'-- Select --')])[2]");
+	//private By event =By.xpath("(//div[@class='oxd-select-text oxd-select-text--active'])[1]");
+	private By event=By.xpath("//label[text()='Event']/../following-sibling::div//div[@class='oxd-select-text-input']");
+	private By currency =By.xpath("//label[text()='Currency']/../following-sibling::div//div[@class='oxd-select-text-input']");
 	private By currencyid =By.className("div[class='oxd-select-text-input']");
 	private By remarks =By.xpath("//textarea[@class='oxd-textarea oxd-textarea--active oxd-textarea--resize-vertical']");
 	private By dropdown=By.className( "oxd-select-text-input");
 	private By submit=By.cssSelector("button[type='submit']");
 	private By cancel=By.xpath("//button[normalize-space()='Cancel']");
-	private By currency_select=By.xpath("//span[text()='Afghanistan Afghani']");
-
+	//private By currency_select=By.xpath("//span[text()='Afghanistan Afghani']");
+	private By event_select=By.xpath("//span[text()='Travel Allowance']");
+	private By claim_select=By.xpath("//h6[normalize-space()='Submit Claim']");
 	
     
 	WebDriverWait wait;
@@ -62,39 +65,37 @@ public class O_ClaimPage {
 	
 	
 	// click event for  claim
-	public void eventSelect() throws InterruptedException {
+	public void eventSelect(String eventName) throws InterruptedException {
 		
-		//driver.findElements(dropdownCountry);
-		List<WebElement> elements = driver.findElements(dropdown);
-	    System.out.println("Number of elements:" +elements.size());
-	    elements.get(0).click();
-	    elements.get(0).sendKeys(Keys.ARROW_DOWN);
-        Thread.sleep(1000);
-        elements.get(0).sendKeys(Keys.ARROW_DOWN);
-        Thread.sleep(1000);
-        elements.get(0).sendKeys(Keys.ENTER);
-        Thread.sleep(1000);
+		 wait.until(ExpectedConditions.presenceOfElementLocated(event));
+	    driver.findElement(event).click();
 	    
-		
+	    String eventXpath = "//span[text()='" + eventName + "']";
+	    //System.out.println(currecnyXpath);
+		By event_select = By.xpath(eventXpath);
+		//System.out.println(currency_select);
+	    
+	    wait.until(ExpectedConditions.presenceOfElementLocated(event_select));
+	    driver.findElement(event_select).click();
+	    
 			}
 	
 	// click currency for  claim
+
 	
-	public void currencySelect() throws InterruptedException {
-		List<WebElement> elements = driver.findElements(dropdown);
-	    System.out.println("Number of elements:" +elements.size());
+	public void currencySelect(String currencyName) throws InterruptedException {
+		
+		 wait.until(ExpectedConditions.presenceOfElementLocated(currency));
+	    driver.findElement(currency).click();
 	    
+	    String currecnyXpath = "//span[text()='" + currencyName + "']";
+	    System.out.println(currecnyXpath);
+		By currency_select = By.xpath(currecnyXpath);
+		System.out.println(currency_select);
 	    wait.until(ExpectedConditions.presenceOfElementLocated(currency_select));
+	    driver.findElement(currency_select).click();
 	    
-	  ////span[text()='Afghanistan Afghani']
-	    elements.get(1).click();
-	    elements.get(1).sendKeys(Keys.ARROW_DOWN);
-        Thread.sleep(1000);
-        elements.get(1).sendKeys(Keys.ARROW_DOWN);
-        Thread.sleep(1000);
-        elements.get(1).sendKeys(Keys.ENTER);
-        Thread.sleep(1000);
-			}
+	 		}
 	
 	
 	
@@ -121,5 +122,13 @@ public class O_ClaimPage {
 			}
 
 
+	public String isclaimPresent() {
+
+		
+		wait.until(ExpectedConditions.presenceOfElementLocated(claim_select));
+		driver.findElement(claim_select).isDisplayed();
+		return driver.findElement(claim_select).getText();
+
+	}
 
 	}
