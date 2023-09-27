@@ -71,9 +71,9 @@ public class O_ClaimPage {
 	    driver.findElement(event).click();
 	    
 	    String eventXpath = "//span[text()='" + eventName + "']";
-	    //System.out.println(currecnyXpath);
+	   
 		By event_select = By.xpath(eventXpath);
-		//System.out.println(currency_select);
+		
 	    
 	    wait.until(ExpectedConditions.presenceOfElementLocated(event_select));
 	    driver.findElement(event_select).click();
@@ -130,5 +130,30 @@ public class O_ClaimPage {
 		return driver.findElement(claim_select).getText();
 
 	}
+	
+	
+	public void isDashobardPressent(String tagName) throws InterruptedException {
+		
+	    String dashXpath = "//a[normalize-space()='" + tagName + "']";
+	   
+		By event_select = By.xpath(dashXpath);
+		
+	    
+	    wait.until(ExpectedConditions.presenceOfElementLocated(event_select));
+	    driver.findElement(event_select).click();
+	    
+			}
+	
+public String dashobardPressent(String tagName) throws InterruptedException {
+		
+	    String dashXpath = "//a[normalize-space()='" + tagName + "']";
+	   
+		By event_select = By.xpath(dashXpath);
+		
+	    
+	    wait.until(ExpectedConditions.presenceOfElementLocated(event_select));
+	    return  driver.findElement(event_select).getText();
+	    
+			}
 
 	}

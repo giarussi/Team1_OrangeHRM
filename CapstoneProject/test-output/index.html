@@ -50,7 +50,7 @@
               <ul>
                 <li>
                   <a href="#" panel-name="test-xml-Default_suite" class="navigator-link ">
-                    <span>C:\Users\U1230894\AppData\Local\Temp\testng-eclipse--1119570231\testng-customsuite.xml</span>
+                    <span>C:\Users\U1230894\AppData\Local\Temp\testng-eclipse-324942559\testng-customsuite.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -92,7 +92,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">2 methods,   2 passed</span>
+                    <span class="method-stats">3 methods,   3 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -104,6 +104,11 @@
                       <span>
                         <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-Default_suite" title="claimTests.TestOrangeCreateClaim" class="method navigator-link" hash-for-method="testCancelclaim({Username=Admin, Password=admin123, Event_select=Travel Allowance, Currency_select=Afghanistan Afgha...)">testCancelclaim({Username=Admin, Password=admin123, Event_select=Travel Allowance, Currency_select=Afghanistan Afgha...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="claimTests.TestOrangeCreateClaim" class="method navigator-link" hash-for-method="testClaimDashboard({Username=Admin, Password=admin123, Header1=Submit Claim, Header2=My Claims, Header3=Employee Claims...)">testClaimDashboard({Username=Admin, Password=admin123, Header1=Submit Claim, Header2=My Claims, Header3=Employee Claims...)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -139,6 +144,14 @@
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
+                  <a name="testClaimDashboard({Username=Admin, Password=admin123, Header1=Submit Claim, Header2=My Claims, Header3=Employee Claims...)">
+                  </a> <!-- testClaimDashboard({Username=Admin, Password=admin123, Header1=Submit Claim, Header2=My Claims, Header3=Employee Claims...) -->
+                  <span class="method-name">testClaimDashboard</span>
+                  <span class="parameters">({Username=Admin, Password=admin123, Header1=Submit Claim, Header2=My Claims, Header3=Employee Claims, Header4=Assign Claim})</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
                   <a name="testCreateClaim({Username=Admin, Password=admin123, Event_select=Travel Allowance, Currency_select=Afghanistan Afgha...)">
                   </a> <!-- testCreateClaim({Username=Admin, Password=admin123, Event_select=Travel Allowance, Currency_select=Afghanistan Afgha...) -->
                   <span class="method-name">testCreateClaim</span>
@@ -150,7 +163,7 @@
         </div> <!-- panel Default_suite -->
         <div panel-name="test-xml-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\U1230894\AppData\Local\Temp\testng-eclipse--1119570231\testng-customsuite.xml</span>
+            <span class="header-content">C:\Users\U1230894\AppData\Local\Temp\testng-eclipse-324942559\testng-customsuite.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -199,20 +212,24 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(2);
+data.addRows(3);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'testCancelclaim')
 data.setCell(0, 2, 'claimTests.TestOrangeCreateClaim')
-data.setCell(0, 3, 18388);
+data.setCell(0, 3, 19721);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'testCreateClaim')
 data.setCell(1, 2, 'claimTests.TestOrangeCreateClaim')
-data.setCell(1, 3, 13870);
+data.setCell(1, 3, 14290);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'testClaimDashboard')
+data.setCell(2, 2, 'claimTests.TestOrangeCreateClaim')
+data.setCell(2, 3, 14031);
 window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 32 seconds</span>
+              <span class="suite-total-time">Total running time: 48 seconds</span>
               <div id="times-div-Default_suite">
               </div> <!-- times-div-Default_suite -->
             </div> <!-- times-div -->
@@ -245,23 +262,31 @@ return data;
               </div> <!-- configuration-class before -->
               <div class="test-method">
                 <span class="method-name">testCancelclaim({Username=Admin, Password=admin123, Event_select=Travel Allowance, Currency_select=Afghanistan Afgha...)</span>
-                <span class="method-start">17077 ms</span>
+                <span class="method-start">23333 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">recordFailure([TestResult name=testCancelclaim status=SUCCESS method=TestOrangeCreateClaim.testCancelclaim(java.ut...)</span>
-                <span class="method-start">35469 ms</span>
+                <span class="method-start">43057 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">testClaimDashboard({Username=Admin, Password=admin123, Header1=Submit Claim, Header2=My Claims, Header3=Employee Claims...)</span>
+                <span class="method-start">43202 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">recordFailure([TestResult name=testClaimDashboard status=SUCCESS method=TestOrangeCreateClaim.testClaimDashboard(j...)</span>
+                <span class="method-start">57237 ms</span>
               </div> <!-- configuration-method after -->
               <div class="test-method">
                 <span class="method-name">testCreateClaim({Username=Admin, Password=admin123, Event_select=Travel Allowance, Currency_select=Afghanistan Afgha...)</span>
-                <span class="method-start">35612 ms</span>
+                <span class="method-start">57384 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">recordFailure([TestResult name=testCreateClaim status=SUCCESS method=TestOrangeCreateClaim.testCreateClaim(java.ut...)</span>
-                <span class="method-start">49484 ms</span>
+                <span class="method-start">71680 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-class after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">49486 ms</span>
+                <span class="method-start">71681 ms</span>
               </div> <!-- configuration-class after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
