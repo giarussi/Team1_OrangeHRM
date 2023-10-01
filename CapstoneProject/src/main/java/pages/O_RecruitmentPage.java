@@ -24,6 +24,13 @@ public class O_RecruitmentPage {
 	private String dashBoard = "https://opensource-demo.orangehrmlive.com/web/index.php/dashboard/index";
 	private By searchVacancyField = By
 			.xpath("//label[text()='Vacancy']/../following-sibling::div//div[contains(text(),'Select')]");
+	private By fNameField = By.name("firstName");
+	private By mNameField = By.name("middleName");
+	private By lNameField = By.name("lastName");
+	private By emailField = By.xpath("//label[text()='Email']/../following-sibling::div//input");
+
+	private By applicationStatus = By.xpath("//p[text()='Status: Application Initiated']");
+	private By candidateNameSearch = By.xpath("//label[text()='Candidate Name']/../following-sibling::div//input");
 
 	public O_RecruitmentPage(WebDriver driver) {
 		this.driver = driver;
@@ -52,9 +59,11 @@ public class O_RecruitmentPage {
 	 * 
 	 * @param linkText
 	 */
-	private void clickLink(String linkText) {
+	public boolean clickLink(String linkText) {
 		wait.until(ExpectedConditions.visibilityOfElementLocated(By.linkText(linkText)));
+		boolean result = driver.findElement(By.linkText(linkText)).isDisplayed();
 		driver.findElement(By.linkText(linkText)).click();
+		return result;
 	}
 
 	/**
@@ -145,4 +154,49 @@ public class O_RecruitmentPage {
 		wait.until(ExpectedConditions.visibilityOfElementLocated(vacancySearchResult));
 		return driver.findElement(vacancySearchResult).isDisplayed();
 	}
+
+	public void clickCandidates() {
+		clickLink("Candidates");
+	}
+
+	public boolean isApplicationCreated() {
+		wait.until(ExpectedConditions.visibilityOfElementLocated(applicationStatus));
+		return driver.findElement(applicationStatus).isDisplayed();
+	}
+
+	public void setFirstName(String fName) {
+		wait.until(ExpectedConditions.presenceOfElementLocated(fNameField));
+		driver.findElement(fNameField).sendKeys(fName);
+	}
+
+	public void setMiddleName(String mName) {
+		driver.findElement(mNameField).sendKeys(mName);
+	}
+
+	public void setLastName(String lName) {
+		driver.findElement(lNameField).sendKeys(lName);
+	}
+
+	public void setEmail(String email) {
+		driver.findElement(emailField).sendKeys(email);
+	}
+
+	public void searchCandidateName(String candidateName) throws InterruptedException {
+		wait.until(ExpectedConditions.visibilityOfElementLocated(candidateNameSearch));
+		driver.findElement(candidateNameSearch).click();
+		driver.findElement(candidateNameSearch).sendKeys(candidateName);
+		Thread.sleep(1000);
+		wait.until(ExpectedConditions.visibilityOfElementLocated(hiringManagerResult));
+		Thread.sleep(3000);
+		driver.findElement(hiringManagerResult).click();
+	}
+
+	public boolean isCandidatureFound(String candidateName) {
+
+		String xpath = "//div[contains(@class,'oxd-table-card')]//div[text()='" + candidateName + "']";
+		By candidateSearchResult = By.xpath(xpath);
+		wait.until(ExpectedConditions.visibilityOfElementLocated(candidateSearchResult));
+		return driver.findElement(candidateSearchResult).isDisplayed();
+	}
+
 }
