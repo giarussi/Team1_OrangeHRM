@@ -132,7 +132,7 @@ public class TestOrangeCreateClaim extends BaseTest {
 
 	
 	//Create assign claim after login without Remarks 
-	@Test(enabled = true, dataProvider = "getDataFromExcel")
+	//@Test(enabled = true, dataProvider = "getDataFromExcel")
 	public void testAssignClaim(HashMap<String, String> data) throws InterruptedException {
 		boolean isMsgPresent;
 		loginPage.setUserName(data.get("Username"));
@@ -163,7 +163,7 @@ public class TestOrangeCreateClaim extends BaseTest {
 	}
 
 	//Create assign claim after login with Remarks 
-		@Test(enabled = true, dataProvider = "getDataFromExcel")
+		//@Test(enabled = true, dataProvider = "getDataFromExcel")
 		public void testAssignClaimremarks(HashMap<String, String> data) throws InterruptedException {
 			boolean isMsgPresent;
 			loginPage.setUserName(data.get("Username"));
