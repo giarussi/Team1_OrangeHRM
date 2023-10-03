@@ -100,4 +100,13 @@ public class O_HomePage {
 		return new O_RecruitmentPage(driver);
 
 	}
+	/**
+	 * Clicks on Leave link
+	 * @return Leave Page object
+	 */
+		public O_LeavePage clickLeaveLink() {
+		clickLink("Leave");
+		return new O_LeavePage(driver);
+	}
+
 }
