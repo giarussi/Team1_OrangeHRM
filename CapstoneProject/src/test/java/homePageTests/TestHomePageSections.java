@@ -19,7 +19,7 @@ public class TestHomePageSections extends BaseTest {
 		boolean isSectionPresent = false;
 		for (String section : sectionNames) {
 			isSectionPresent = homePage.isSectionPresent(section);
-			//System.out.println("Section-"+section+":"+isSectionPresent);
+			// System.out.println("Section-"+section+":"+isSectionPresent);
 			softAssert.assertEquals(isSectionPresent, true, "Presence of section: " + section);
 		}
 		loginPage = homePage.logout();

@@ -91,9 +91,11 @@ public class BaseTest {
 	public WindowManager getWindowManager() {
 		return new WindowManager(driver);
 	}
-	
+
 	/**
-	 * Access the TestData FIle, and refers to the sheet with reference of calling test method
+	 * Access the TestData FIle, and refers to the sheet with reference of calling
+	 * test method
+	 * 
 	 * @param testMethod
 	 * @return
 	 * @throws IOException

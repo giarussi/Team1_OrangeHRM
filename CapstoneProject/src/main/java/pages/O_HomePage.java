@@ -18,11 +18,21 @@ public class O_HomePage {
 		wait = new WebDriverWait(driver, Duration.ofSeconds(10));
 	}
 
+	/**
+	 * CLicks on PIM Link
+	 * 
+	 * @return PIM Object
+	 */
 	public O_PIMPage clickPIMLink() {
 		clickLink("PIM");
 		return new O_PIMPage(driver);
 	}
 
+	/**
+	 * click link method
+	 * 
+	 * @param linkText
+	 */
 	private void clickLink(String linkText) {
 		wait.until(ExpectedConditions.visibilityOfElementLocated(By.linkText(linkText)));
 		driver.findElement(By.linkText(linkText)).click();
@@ -32,6 +42,11 @@ public class O_HomePage {
 		return driver.getTitle();
 	}
 
+	/**
+	 * Logout method
+	 * 
+	 * @return Login page object
+	 */
 	public O_LoginPage logout() {
 		wait.until(ExpectedConditions.presenceOfElementLocated(profileIcon));
 		driver.findElement(profileIcon).click();
@@ -39,6 +54,10 @@ public class O_HomePage {
 		return new O_LoginPage(driver);
 	}
 
+	/**
+	 * 
+	 * @return current logged in username
+	 */
 	public String getLoggedInUser() {
 		wait.until(ExpectedConditions.presenceOfElementLocated(profileIcon));
 		return driver.findElement(profileIcon).getText();
@@ -49,21 +68,36 @@ public class O_HomePage {
 		return driver.findElement(logo).isDisplayed();
 	}
 
+	/**
+	 * Checks if section is present in home page
+	 * 
+	 * @param sectionName
+	 * @return true if section is present. False if not present
+	 */
 	public boolean isSectionPresent(String sectionName) {
 		String sectionXpath = "//p[text()='" + sectionName + "']";
 		By sectionLocator = By.xpath(sectionXpath);
 		wait.until(ExpectedConditions.presenceOfElementLocated(sectionLocator));
 		return driver.findElement(sectionLocator).isDisplayed();
 	}
-	
-	
+
 	/**
-	 * Clicks on the claim page 
+	 * Clicks on the claim page
 	 * 
-	 * @return
+	 * @return claim page object
 	 */
 	public O_ClaimPage clickClaimLink() {
 		clickLink("Claim");
 		return new O_ClaimPage(driver);
+	}
+	
+	/**
+	 * Clicks on recruitment link
+	 * @return Recruitment Page object
+	 */
+	public O_RecruitmentPage clickRecruitmentLink() {
+		clickLink("Recruitment");
+		return new O_RecruitmentPage(driver);
+
 	}
 }
