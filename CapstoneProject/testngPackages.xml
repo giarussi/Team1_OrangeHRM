@@ -9,7 +9,8 @@
 			<package name="leaveTests" />
 			<package name="pimTests" />
 			<package name="homePageTests" />
-			<package name="recruitmentPageTests" />
+			<package
+				name="recruitmentPageTests" />
 		</packages>
 	</test> <!--
 	TestPackages -->
