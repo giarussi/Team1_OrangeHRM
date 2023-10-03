@@ -14,7 +14,7 @@ public class TestOrangeCreateClaim extends BaseTest {
 
 	String password;
 
-	//Create claim after login 
+	//Create claim after login without Remarks 
 	@Test(enabled = true, dataProvider = "getDataFromExcel")
 	public void testCreateClaim(HashMap<String, String> data) throws InterruptedException {
 		boolean isMsgPresent;
@@ -32,7 +32,7 @@ public class TestOrangeCreateClaim extends BaseTest {
 		claimPage.eventSelect(data.get("Event_select"));
 		
 		claimPage.currencySelect(data.get("Currency_select"));
-
+		
 		claimPage.createBtn();
 		softAssert.assertEquals("Submit Claim", claimPage.isclaimPresent(), "Claim is not present");
 		
@@ -41,6 +41,36 @@ public class TestOrangeCreateClaim extends BaseTest {
 		softAssert.assertAll();
 
 	}
+
+	
+	//Create claim after login with Remarks
+	@Test(enabled = true, dataProvider = "getDataFromExcel")
+	public void testCreateClaimRemarks(HashMap<String, String> data) throws InterruptedException {
+		boolean isMsgPresent;
+		loginPage.setUserName(data.get("Username"));
+		loginPage.setPassword(data.get("Password"));
+
+		var homePage = loginPage.clickSubmit();
+		System.out.println("Sign In Credentials: " + "\n" + "  Username = " + data.get("Username") + "\n"
+				+ "  Password = " + data.get("Password"));
+
+		var claimPage = homePage.clickClaimLink();
+		claimPage.clickClaim();
+		softAssert.assertEquals("Claim", claimPage.isLogoDisplayed(), "Claim is not visible");
+		System.out.println(claimPage.isLogoDisplayed());
+		claimPage.eventSelect(data.get("Event_select"));
+		
+		claimPage.currencySelect(data.get("Currency_select"));
+		claimPage.addRemarks(data.get("Remarks"));
+		claimPage.createBtn();
+		softAssert.assertEquals("Submit Claim", claimPage.isclaimPresent(), "Claim is not present");
+		
+		loginPage = homePage.logout();
+
+		softAssert.assertAll();
+
+	}
+
 
 	// Create claim and click on cancel
 	@Test(enabled = true, dataProvider = "getDataFromExcel")
@@ -59,6 +89,7 @@ public class TestOrangeCreateClaim extends BaseTest {
 		System.out.println(claimPage.isLogoDisplayed());
 		claimPage.eventSelect(data.get("Event_select"));
 		claimPage.currencySelect(data.get("Currency_select"));
+		claimPage.addRemarks(data.get("Remarks"));
 		claimPage.cancelBtn();
 		loginPage = homePage.logout();
 
@@ -98,5 +129,71 @@ public class TestOrangeCreateClaim extends BaseTest {
 
 	}
 
+
+	
+	//Create assign claim after login without Remarks 
+	@Test(enabled = true, dataProvider = "getDataFromExcel")
+	public void testAssignClaim(HashMap<String, String> data) throws InterruptedException {
+		boolean isMsgPresent;
+		loginPage.setUserName(data.get("Username"));
+		loginPage.setPassword(data.get("Password"));
+
+		var homePage = loginPage.clickSubmit();
+		System.out.println("Sign In Credentials: " + "\n" + "  Username = " + data.get("Username") + "\n"
+				+ "  Password = " + data.get("Password"));
+
+		var claimPage = homePage.clickClaimLink();
+		claimPage.clickAssignClaim();
+		softAssert.assertEquals("Claim", claimPage.isLogoDisplayed(), "Claim is not visible");
+		System.out.println(claimPage.isLogoDisplayed());
+		claimPage.addEmpName(data.get("EmpName"));
+		claimPage.eventSelect(data.get("Event_select"));
+		
+		claimPage.currencySelect(data.get("Currency_select"));
+		System.out.println("dqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqddddddddddddddddddddd");
+		claimPage.createBtn();
+		Thread.sleep(7000);
+		System.out.println("1111qqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqddddddddddddddddddddd");
+		//softAssert.assertEquals("Assign Claim", claimPage.isclaimPresent(), "Claim is not present");
+		
+		loginPage = homePage.logout();
+
+		softAssert.assertAll();
+
+	}
+
+	//Create assign claim after login with Remarks 
+		@Test(enabled = true, dataProvider = "getDataFromExcel")
+		public void testAssignClaimremarks(HashMap<String, String> data) throws InterruptedException {
+			boolean isMsgPresent;
+			loginPage.setUserName(data.get("Username"));
+			loginPage.setPassword(data.get("Password"));
+
+			var homePage = loginPage.clickSubmit();
+			System.out.println("Sign In Credentials: " + "\n" + "  Username = " + data.get("Username") + "\n"
+					+ "  Password = " + data.get("Password"));
+
+			var claimPage = homePage.clickClaimLink();
+			claimPage.clickAssignClaim();
+			softAssert.assertEquals("Claim", claimPage.isLogoDisplayed(), "Claim is not visible");
+			System.out.println(claimPage.isLogoDisplayed());
+			claimPage.addEmpName(data.get("EmpName"));
+			claimPage.eventSelect(data.get("Event_select"));
+			
+			claimPage.currencySelect(data.get("Currency_select"));
+			claimPage.addRemarks(data.get("Remarks"));
+			System.out.println("dqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqddddddddddddddddddddd");
+			claimPage.createBtn();
+			Thread.sleep(5000);
+			System.out.println("dddddddddddddddddddddd");
+			//softAssert.assertEquals("Assign Claim", claimPage.isclaimPresent(), "Claim is not present");
+			System.out.println("dddd555555555555555555555555dddddddddddddddddd");
+			loginPage = homePage.logout();
+
+			softAssert.assertAll();
+
+		}
+
+	
 	
 }
