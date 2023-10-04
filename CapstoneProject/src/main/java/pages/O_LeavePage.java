@@ -16,17 +16,14 @@ public class O_LeavePage {
 	private WebDriver driver;
 	protected String username;
 
+	// Locators for various elements on the page
 	private By entitlement = By.xpath("//*[@id=\"app\"]/div[1]/div[1]/header/div[2]/nav/ul/li[3]/span");
 	private By profileIcon = By.xpath("//*[@class='oxd-userdropdown-name']");
 	private By headerField = By.linkText("Leave");
-	By employeeName = By
-			.xpath("//*[@id=\"app\"]/div[1]/div[2]/div[2]/div/div/form/div[2]/div/div/div/div[2]/div/div/input");
-	By employeeNameInput = By
-			.xpath("//*[@id=\"app\"]/div[1]/div[2]/div[2]/div/div/form/div[2]/div/div/div/div[2]/div/div/div[2]");
-	By employeeNameInput1 = By
-			.xpath("//*[@id=\"app\"]/div[1]/div[2]/div[2]/div/div/form/div[1]/div/div/div/div[2]/div/div/input");
-	By leaveType = By
-			.xpath("//*[@id=\"app\"]/div[1]/div[2]/div[2]/div/div/form/div[3]/div/div[1]/div/div[2]/div/div/div[1]");
+	By employeeName = By.xpath("//*[@id=\"app\"]/div[1]/div[2]/div[2]/div/div/form/div[2]/div/div/div/div[2]/div/div/input");
+	By employeeNameInput = By.xpath("//*[@id=\"app\"]/div[1]/div[2]/div[2]/div/div/form/div[2]/div/div/div/div[2]/div/div/div[2]");
+	By employeeNameInput1 = By.xpath("//*[@id=\"app\"]/div[1]/div[2]/div[2]/div/div/form/div[1]/div/div/div/div[2]/div/div/input");
+	By leaveType = By.xpath("//*[@id=\"app\"]/div[1]/div[2]/div[2]/div/div/form/div[3]/div/div[1]/div/div[2]/div/div/div[1]");
 	By leaveType1 = By
 			.xpath("//*[@id=\"app\"]/div[1]/div[2]/div[2]/div/div/form/div[2]/div/div[1]/div/div[2]/div/div/div[1]");
 	By entitlementCount = By
@@ -68,18 +65,21 @@ public class O_LeavePage {
 		wait = new WebDriverWait(driver, Duration.ofSeconds(10));
 	}
 
+	// Method to get the logged-in user's username
 	public void getLoggedInUser() {
 		wait.until(ExpectedConditions.presenceOfElementLocated(profileIcon));
 		username = driver.findElement(profileIcon).getText();
 
 	}
 
+	// Method to check if the "Leave" logo is displayed and return its text
 	public String isLogoDisplayed() {
 		wait.until(ExpectedConditions.presenceOfElementLocated(headerField));
 		driver.findElement(headerField).isDisplayed();
 		return driver.findElement(headerField).getText();
 	}
 
+	  // Method to verify the presence of various tabs on the page
 	public void verifyAllTabs() {
 		driver.findElement(applyButton).isDisplayed();
 		driver.findElement(leaveButton).isDisplayed();
@@ -90,6 +90,7 @@ public class O_LeavePage {
 		driver.findElement(assignButton).isDisplayed();
 	}
 
+	// Method to handle entitlement selection
 	public String entitlementType() throws InterruptedException {
 		wait.until(ExpectedConditions.presenceOfElementLocated(entitlement));
 		driver.findElement(entitlement).isDisplayed();
@@ -103,7 +104,7 @@ public class O_LeavePage {
 		return driver.findElement(entitlement).getText();
 	}
 
-	// click event for claim
+	 // Method to select a leave entitlement
 	public void entitlementSelect(String leaveType1) throws InterruptedException {
 
 		wait.until(ExpectedConditions.presenceOfElementLocated(leaveType));
@@ -119,7 +120,8 @@ public class O_LeavePage {
 
 	}
 
-	public void editEntitlement() throws InterruptedException {
+	// Method to edit a leave entitlement
+	public void editEntitlement(String leaveCount) throws InterruptedException {
 		Thread.sleep(10000);
 		JavascriptExecutor js = (JavascriptExecutor) driver;
 
@@ -134,13 +136,14 @@ public class O_LeavePage {
 //		driver.findElement(newEntitlement).clear();
 		js.executeScript("arguments[0].value = '';", driver.findElement(newEntitlement));
 		Thread.sleep(5000);
-		driver.findElement(newEntitlement).sendKeys("25");
+		driver.findElement(newEntitlement).sendKeys(leaveCount);
 		Thread.sleep(5000);
 		driver.findElement(saveUpdatedEntitlement).click();
 		Thread.sleep(5000);
 
 	}
 
+	// Method to assign leave
 	public void assignLeave(String leaveType2) throws InterruptedException {
 		driver.findElement(assignLeave).click();
 		Thread.sleep(3000);
@@ -160,6 +163,7 @@ public class O_LeavePage {
 		driver.findElement(assignLeaves).click();
 	}
 
+	 // Method to view leave reports
 	public void viewLeaveReports() throws InterruptedException {
 		driver.findElement(leaveReports).click();
 		Thread.sleep(2000);
@@ -169,8 +173,9 @@ public class O_LeavePage {
 		Thread.sleep(5000);
 		driver.findElement(maximizeButton).click();
 		Thread.sleep(5000);
-		Actions action = new Actions(driver);
-		action.sendKeys(Keys.ESCAPE).build().perform();
+		driver.findElement(maximizeButton).click();
+		Thread.sleep(5000);
+		
 
 	}
 
