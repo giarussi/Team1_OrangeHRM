@@ -2,60 +2,48 @@
 <testng-results ignored="0" total="6" passed="6" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-10-03T17:59:50 IST" name="Default suite" finished-at="2023-10-03T18:02:08 IST" duration-ms="138322">
+  <suite started-at="2023-10-04T19:53:38 IST" name="Suite" finished-at="2023-10-04T19:57:08 IST" duration-ms="210468">
     <groups>
     </groups>
-    <test started-at="2023-10-03T17:59:50 IST" name="Default test" finished-at="2023-10-03T18:02:08 IST" duration-ms="138322">
-      <class name="claimTests.TestOrangeCreateClaim">
-        <test-method is-config="true" signature="setup()[pri:0, instance:claimTests.TestOrangeCreateClaim@4f32a3ad]" started-at="2023-10-03T17:59:50 IST" name="setup" finished-at="2023-10-03T18:00:06 IST" duration-ms="16283" status="PASS">
+    <test started-at="2023-10-04T19:53:38 IST" name="Test" finished-at="2023-10-04T19:57:08 IST" duration-ms="210468">
+      <class name="claimTests.TestOrangeDashboardClaim">
+        <test-method is-config="true" signature="setup()[pri:0, instance:claimTests.TestOrangeDashboardClaim@4d1bf319]" started-at="2023-10-04T19:53:38 IST" name="setup" finished-at="2023-10-04T19:53:55 IST" duration-ms="17030" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="testAssignClaim(java.util.HashMap)[pri:0, instance:claimTests.TestOrangeCreateClaim@4f32a3ad]" started-at="2023-10-03T18:00:08 IST" name="testAssignClaim" data-provider="getDataFromExcel" finished-at="2023-10-03T18:00:41 IST" duration-ms="33003" status="PASS">
+        <test-method signature="testClaimDashboard(java.util.HashMap)[pri:0, instance:claimTests.TestOrangeDashboardClaim@4d1bf319]" started-at="2023-10-04T19:53:56 IST" name="testClaimDashboard" data-provider="getDataFromExcel" finished-at="2023-10-04T19:54:21 IST" duration-ms="24382" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[{Username=Admin, Password=admin123, Event_select=Travel Allowance, Currency_select=Afghanistan Afghani, Remarks=Added Claim , EmpName=Orange Test}]]>
+                <![CDATA[{Username=Admin, Password=admin123, Header1=Submit Claim, Header2=My Claims, Header3=Employee Claims, Header4=Assign Claim, Header5=Configuration}]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testAssignClaim -->
-        <test-method is-config="true" signature="recordFailure(org.testng.ITestResult)[pri:0, instance:claimTests.TestOrangeCreateClaim@4f32a3ad]" started-at="2023-10-03T18:00:41 IST" name="recordFailure" finished-at="2023-10-03T18:00:41 IST" duration-ms="1" status="PASS">
+        </test-method> <!-- testClaimDashboard -->
+        <test-method is-config="true" signature="recordFailure(org.testng.ITestResult)[pri:0, instance:claimTests.TestOrangeDashboardClaim@4d1bf319]" started-at="2023-10-04T19:54:21 IST" name="recordFailure" finished-at="2023-10-04T19:54:21 IST" duration-ms="2" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=testAssignClaim status=SUCCESS method=TestOrangeCreateClaim.testAssignClaim(java.util.HashMap)[pri:0, instance:claimTests.TestOrangeCreateClaim@4f32a3ad] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- recordFailure -->
-        <test-method signature="testAssignClaimremarks(java.util.HashMap)[pri:0, instance:claimTests.TestOrangeCreateClaim@4f32a3ad]" started-at="2023-10-03T18:00:41 IST" name="testAssignClaimremarks" data-provider="getDataFromExcel" finished-at="2023-10-03T18:01:04 IST" duration-ms="23206" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[{Username=Admin, Password=admin123, Event_select=Travel Allowance, Currency_select=Afghanistan Afghani, Remarks=Added Claim , EmpName=Orange Test}]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testAssignClaimremarks -->
-        <test-method is-config="true" signature="recordFailure(org.testng.ITestResult)[pri:0, instance:claimTests.TestOrangeCreateClaim@4f32a3ad]" started-at="2023-10-03T18:01:04 IST" name="recordFailure" finished-at="2023-10-03T18:01:04 IST" duration-ms="1" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=testAssignClaimremarks status=SUCCESS method=TestOrangeCreateClaim.testAssignClaimremarks(java.util.HashMap)[pri:0, instance:claimTests.TestOrangeCreateClaim@4f32a3ad] output={null}]]]>
+                <![CDATA[[TestResult name=testClaimDashboard status=SUCCESS method=TestOrangeDashboardClaim.testClaimDashboard(java.util.HashMap)[pri:0, instance:claimTests.TestOrangeDashboardClaim@4d1bf319] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- recordFailure -->
-        <test-method signature="testCancelclaim(java.util.HashMap)[pri:0, instance:claimTests.TestOrangeCreateClaim@4f32a3ad]" started-at="2023-10-03T18:01:04 IST" name="testCancelclaim" data-provider="getDataFromExcel" finished-at="2023-10-03T18:01:18 IST" duration-ms="13341" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:claimTests.TestOrangeDashboardClaim@4d1bf319]" started-at="2023-10-04T19:54:21 IST" name="tearDown" finished-at="2023-10-04T19:54:21 IST" duration-ms="669" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- claimTests.TestOrangeDashboardClaim -->
+      <class name="claimTests.TestOrangeCreateClaim">
+        <test-method is-config="true" signature="setup()[pri:0, instance:claimTests.TestOrangeCreateClaim@7a5ceedd]" started-at="2023-10-04T19:54:21 IST" name="setup" finished-at="2023-10-04T19:54:34 IST" duration-ms="12904" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="testCancelclaim(java.util.HashMap)[pri:0, instance:claimTests.TestOrangeCreateClaim@7a5ceedd]" started-at="2023-10-04T19:54:35 IST" name="testCancelclaim" data-provider="getDataFromExcel" finished-at="2023-10-04T19:54:57 IST" duration-ms="21954" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -66,88 +54,120 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testCancelclaim -->
-        <test-method is-config="true" signature="recordFailure(org.testng.ITestResult)[pri:0, instance:claimTests.TestOrangeCreateClaim@4f32a3ad]" started-at="2023-10-03T18:01:18 IST" name="recordFailure" finished-at="2023-10-03T18:01:18 IST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="recordFailure(org.testng.ITestResult)[pri:0, instance:claimTests.TestOrangeCreateClaim@7a5ceedd]" started-at="2023-10-04T19:54:57 IST" name="recordFailure" finished-at="2023-10-04T19:54:57 IST" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=testCancelclaim status=SUCCESS method=TestOrangeCreateClaim.testCancelclaim(java.util.HashMap)[pri:0, instance:claimTests.TestOrangeCreateClaim@4f32a3ad] output={null}]]]>
+                <![CDATA[[TestResult name=testCancelclaim status=SUCCESS method=TestOrangeCreateClaim.testCancelclaim(java.util.HashMap)[pri:0, instance:claimTests.TestOrangeCreateClaim@7a5ceedd] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- recordFailure -->
-        <test-method signature="testClaimDashboard(java.util.HashMap)[pri:0, instance:claimTests.TestOrangeCreateClaim@4f32a3ad]" started-at="2023-10-03T18:01:18 IST" name="testClaimDashboard" data-provider="getDataFromExcel" finished-at="2023-10-03T18:01:34 IST" duration-ms="16166" status="PASS">
+        <test-method signature="testCreateClaim(java.util.HashMap)[pri:0, instance:claimTests.TestOrangeCreateClaim@7a5ceedd]" started-at="2023-10-04T19:54:57 IST" name="testCreateClaim" data-provider="getDataFromExcel" finished-at="2023-10-04T19:55:28 IST" duration-ms="30798" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[{Username=Admin, Password=admin123, Header1=Submit Claim, Header2=My Claims, Header3=Employee Claims, Header4=Assign Claim}]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testClaimDashboard -->
-        <test-method is-config="true" signature="recordFailure(org.testng.ITestResult)[pri:0, instance:claimTests.TestOrangeCreateClaim@4f32a3ad]" started-at="2023-10-03T18:01:34 IST" name="recordFailure" finished-at="2023-10-03T18:01:34 IST" duration-ms="1" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=testClaimDashboard status=SUCCESS method=TestOrangeCreateClaim.testClaimDashboard(java.util.HashMap)[pri:0, instance:claimTests.TestOrangeCreateClaim@4f32a3ad] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- recordFailure -->
-        <test-method signature="testCreateClaim(java.util.HashMap)[pri:0, instance:claimTests.TestOrangeCreateClaim@4f32a3ad]" started-at="2023-10-03T18:01:34 IST" name="testCreateClaim" data-provider="getDataFromExcel" finished-at="2023-10-03T18:01:51 IST" duration-ms="16205" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[{Username=Admin, Password=admin123, Event_select=Travel Allowance, Currency_select=Afghanistan Afghani, Remarks=Added Claim }]]>
+                <![CDATA[{Username=Admin, Password=admin123, Event_select=Travel Allowance, Currency_select=Afghanistan Afghani, Remarks=Added Claim , Notes=Added expense, Amount=2000.0, Date=10-Oct-2023}]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testCreateClaim -->
-        <test-method is-config="true" signature="recordFailure(org.testng.ITestResult)[pri:0, instance:claimTests.TestOrangeCreateClaim@4f32a3ad]" started-at="2023-10-03T18:01:51 IST" name="recordFailure" finished-at="2023-10-03T18:01:51 IST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="recordFailure(org.testng.ITestResult)[pri:0, instance:claimTests.TestOrangeCreateClaim@7a5ceedd]" started-at="2023-10-04T19:55:28 IST" name="recordFailure" finished-at="2023-10-04T19:55:28 IST" duration-ms="0" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=testCreateClaim status=SUCCESS method=TestOrangeCreateClaim.testCreateClaim(java.util.HashMap)[pri:0, instance:claimTests.TestOrangeCreateClaim@4f32a3ad] output={null}]]]>
+                <![CDATA[[TestResult name=testCreateClaim status=SUCCESS method=TestOrangeCreateClaim.testCreateClaim(java.util.HashMap)[pri:0, instance:claimTests.TestOrangeCreateClaim@7a5ceedd] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- recordFailure -->
-        <test-method signature="testCreateClaimRemarks(java.util.HashMap)[pri:0, instance:claimTests.TestOrangeCreateClaim@4f32a3ad]" started-at="2023-10-03T18:01:51 IST" name="testCreateClaimRemarks" data-provider="getDataFromExcel" finished-at="2023-10-03T18:02:08 IST" duration-ms="16930" status="PASS">
+        <test-method signature="testCreateClaimRemarks(java.util.HashMap)[pri:0, instance:claimTests.TestOrangeCreateClaim@7a5ceedd]" started-at="2023-10-04T19:55:28 IST" name="testCreateClaimRemarks" data-provider="getDataFromExcel" finished-at="2023-10-04T19:55:42 IST" duration-ms="13716" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[{Username=Admin, Password=admin123, Event_select=Travel Allowance, Currency_select=Afghanistan Afghani, Remarks=Added Claim }]]>
+                <![CDATA[{Username=Admin, Password=admin123, Event_select=Travel Allowance, Currency_select=Afghanistan Afghani, Remarks=Added Claim , Notes=Added expense, Amount=2000.0, Date=10-Oct-2023}]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testCreateClaimRemarks -->
-        <test-method is-config="true" signature="recordFailure(org.testng.ITestResult)[pri:0, instance:claimTests.TestOrangeCreateClaim@4f32a3ad]" started-at="2023-10-03T18:02:08 IST" name="recordFailure" finished-at="2023-10-03T18:02:08 IST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="recordFailure(org.testng.ITestResult)[pri:0, instance:claimTests.TestOrangeCreateClaim@7a5ceedd]" started-at="2023-10-04T19:55:42 IST" name="recordFailure" finished-at="2023-10-04T19:55:42 IST" duration-ms="0" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=testCreateClaimRemarks status=SUCCESS method=TestOrangeCreateClaim.testCreateClaimRemarks(java.util.HashMap)[pri:0, instance:claimTests.TestOrangeCreateClaim@4f32a3ad] output={null}]]]>
+                <![CDATA[[TestResult name=testCreateClaimRemarks status=SUCCESS method=TestOrangeCreateClaim.testCreateClaimRemarks(java.util.HashMap)[pri:0, instance:claimTests.TestOrangeCreateClaim@7a5ceedd] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- recordFailure -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:claimTests.TestOrangeCreateClaim@4f32a3ad]" started-at="2023-10-03T18:02:08 IST" name="tearDown" finished-at="2023-10-03T18:02:08 IST" duration-ms="608" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:claimTests.TestOrangeCreateClaim@7a5ceedd]" started-at="2023-10-04T19:55:42 IST" name="tearDown" finished-at="2023-10-04T19:55:42 IST" duration-ms="586" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- claimTests.TestOrangeCreateClaim -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+      <class name="claimTests.TestOrangeAssignClaim">
+        <test-method is-config="true" signature="setup()[pri:0, instance:claimTests.TestOrangeAssignClaim@6cb107fd]" started-at="2023-10-04T19:55:42 IST" name="setup" finished-at="2023-10-04T19:55:56 IST" duration-ms="14098" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="testAssignClaim(java.util.HashMap)[pri:0, instance:claimTests.TestOrangeAssignClaim@6cb107fd]" started-at="2023-10-04T19:55:56 IST" name="testAssignClaim" data-provider="getDataFromExcel" finished-at="2023-10-04T19:56:43 IST" duration-ms="47069" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{Username=Admin, Password=admin123, Event_select=Travel Allowance, Currency_select=Afghanistan Afghani, Remarks=Added Claim , FirstName=Christian, MiddleName=John, LastName=Bale}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testAssignClaim -->
+        <test-method is-config="true" signature="recordFailure(org.testng.ITestResult)[pri:0, instance:claimTests.TestOrangeAssignClaim@6cb107fd]" started-at="2023-10-04T19:56:43 IST" name="recordFailure" finished-at="2023-10-04T19:56:43 IST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testAssignClaim status=SUCCESS method=TestOrangeAssignClaim.testAssignClaim(java.util.HashMap)[pri:0, instance:claimTests.TestOrangeAssignClaim@6cb107fd] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- recordFailure -->
+        <test-method signature="testAssignClaimremarks(java.util.HashMap)[pri:0, instance:claimTests.TestOrangeAssignClaim@6cb107fd]" started-at="2023-10-04T19:56:44 IST" name="testAssignClaimremarks" data-provider="getDataFromExcel" finished-at="2023-10-04T19:57:08 IST" depends-on-methods="claimTests.TestOrangeAssignClaim.testAssignClaim" duration-ms="23932" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{Username=Admin, Password=admin123, Event_select=Travel Allowance, Currency_select=Afghanistan Afghani, Remarks=Added Claim , FirstName=Christian, MiddleName=John, LastName=Bale}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testAssignClaimremarks -->
+        <test-method is-config="true" signature="recordFailure(org.testng.ITestResult)[pri:0, instance:claimTests.TestOrangeAssignClaim@6cb107fd]" started-at="2023-10-04T19:57:08 IST" name="recordFailure" finished-at="2023-10-04T19:57:08 IST" duration-ms="14" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testAssignClaimremarks status=SUCCESS method=TestOrangeAssignClaim.testAssignClaimremarks(java.util.HashMap)[pri:0, instance:claimTests.TestOrangeAssignClaim@6cb107fd] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- recordFailure -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:claimTests.TestOrangeAssignClaim@6cb107fd]" started-at="2023-10-04T19:57:08 IST" name="tearDown" finished-at="2023-10-04T19:57:08 IST" duration-ms="868" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- claimTests.TestOrangeAssignClaim -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
 </testng-results>

@@ -3,19 +3,15 @@
 <suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Test(failed)">
     <classes>
-      <class name="claimTests.TestOrangeCreateClaim">
+      <class name="claimTests.TestOrangeAssignClaim">
         <methods>
           <include name="setup"/>
           <include name="tearDown"/>
-          <include name="testCreateClaim" invocation-numbers="0"/>
-          <include name="testClaimDashboard" invocation-numbers="0"/>
-          <include name="testCancelclaim" invocation-numbers="0"/>
-          <include name="testAssignClaimremarks" invocation-numbers="0"/>
-          <include name="testCreateClaimRemarks" invocation-numbers="0"/>
           <include name="testAssignClaim" invocation-numbers="0"/>
           <include name="recordFailure"/>
+          <include name="testAssignClaimremarks"/>
         </methods>
-      </class> <!-- claimTests.TestOrangeCreateClaim -->
+      </class> <!-- claimTests.TestOrangeAssignClaim -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

@@ -46,7 +46,7 @@ public class BaseTest {
 	private WebDriver driver;
 	protected O_LoginPage loginPage;
 	static Object[][] obj;
-
+	
 	@BeforeClass
 	public void setup() throws InterruptedException {
 		System.setProperty("webdriver.chromedriver.driver", "Resources/driver/chromedriver.exe");
