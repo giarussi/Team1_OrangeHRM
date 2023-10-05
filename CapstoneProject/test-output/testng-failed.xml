@@ -1,17 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
-  <test thread-count="5" name="Test(failed)">
+  <test thread-count="5" name="TestPackages(failed)">
     <classes>
-      <class name="claimTests.TestOrangeAssignClaim">
+      <class name="leaveTests.TestAddEntitlement">
         <methods>
           <include name="setup"/>
           <include name="tearDown"/>
-          <include name="testAssignClaim" invocation-numbers="0"/>
+          <include name="testValidateTabs" invocation-numbers="0"/>
           <include name="recordFailure"/>
-          <include name="testAssignClaimremarks"/>
         </methods>
-      </class> <!-- claimTests.TestOrangeAssignClaim -->
+      </class> <!-- leaveTests.TestAddEntitlement -->
+      <class name="recruitmentPageTests.TestVacanciesCandidature">
+        <methods>
+          <include name="setup"/>
+          <include name="tearDown"/>
+          <include name="testsearchCandidature"/>
+          <include name="testCreateCandidate"/>
+          <include name="testCreateVacancy" invocation-numbers="0"/>
+          <include name="testVacancySearch"/>
+          <include name="recordFailure"/>
+        </methods>
+      </class> <!-- recruitmentPageTests.TestVacanciesCandidature -->
     </classes>
-  </test> <!-- Test(failed) -->
+  </test> <!-- TestPackages(failed) -->
 </suite> <!-- Failed suite [Suite] -->

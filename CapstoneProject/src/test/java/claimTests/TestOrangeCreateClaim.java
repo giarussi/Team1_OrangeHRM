@@ -48,7 +48,6 @@ public class TestOrangeCreateClaim extends BaseTest {
 		claimPage.closeExpense();
 		claimPage.submitClaim();
 		loginPage = homePage.logout();
-
 		softAssert.assertAll();
 
 	}

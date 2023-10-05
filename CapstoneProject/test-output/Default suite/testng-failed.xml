@@ -7,7 +7,7 @@
         <methods>
           <include name="setup"/>
           <include name="tearDown"/>
-          <include name="testCreateClaim" invocation-numbers="0"/>
+          <include name="testCreateClaimRemarks" invocation-numbers="1"/>
           <include name="recordFailure"/>
         </methods>
       </class> <!-- claimTests.TestOrangeCreateClaim -->

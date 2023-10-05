@@ -3,14 +3,12 @@
 <suite name="Suite">
 	<test thread-count="5" name="TestPackages">
 		<packages>
-
-			<package name="claimTests" />
 			<package name="loginTests" />
+			<package name="claimTests" />
 			<package name="leaveTests" />
 			<package name="pimTests" />
 			<package name="homePageTests" />
-			<package
-				name="recruitmentPageTests" />
+			<package name="recruitmentPageTests" />
 		</packages>
 	</test> <!--
 	TestPackages -->

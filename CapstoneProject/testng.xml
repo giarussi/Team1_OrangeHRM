@@ -3,9 +3,9 @@
 <suite name="Suite">
   <test thread-count="5" name="Test">
     <classes>
-      <class name="claimTests.TestOrangeDashboardClaim"/>
-      <class name="claimTests.TestOrangeCreateClaim"/>
-      <class name="claimTests.TestOrangeAssignClaim"/>
+    <class name="claimTests.TestOrangeDashboardClaim"/>
+          <class name="claimTests.TestOrangeAssignClaim"/>
+              <class name="claimTests.TestOrangeCreateClaim"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->
