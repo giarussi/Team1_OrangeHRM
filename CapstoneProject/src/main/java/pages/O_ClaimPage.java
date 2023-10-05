@@ -39,18 +39,23 @@ public class O_ClaimPage {
 	private By addbtn = By.xpath("(//button[@type='button'][normalize-space()='Add'])[1]");
 	private By uploadbutton = By.xpath("/i[@class='oxd-icon bi-upload oxd-file-input-icon']");
 	private By comment = By.xpath("textarea[placeholder='Type comment here']");
-	private By date = By.xpath("//*[@id=\"app\"]/div[1]/div[2]/div[2]/div/div/div[6]/div/div/div/form/div[2]/div/div[1]/div/div[2]/div/div/input");
-	private By note =By.xpath("//*[@id=\"app\"]/div[1]/div[2]/div[2]/div/div/div[6]/div/div/div/form/div[3]/div/div/div/div[2]/textarea");
-    private By amount = By.xpath("//*[@id=\"app\"]/div[1]/div[2]/div[2]/div/div/div[6]/div/div/div/form/div[2]/div/div[2]/div/div[2]/input");
+	private By date = By.xpath(
+			"//*[@id=\"app\"]/div[1]/div[2]/div[2]/div/div/div[6]/div/div/div/form/div[2]/div/div[1]/div/div[2]/div/div/input");
+	private By note = By.xpath(
+			"//*[@id=\"app\"]/div[1]/div[2]/div[2]/div/div/div[6]/div/div/div/form/div[3]/div/div/div/div[2]/textarea");
+	private By amount = By.xpath(
+			"//*[@id=\"app\"]/div[1]/div[2]/div[2]/div/div/div[6]/div/div/div/form/div[2]/div/div[2]/div/div[2]/input");
 	private By attachment = By.xpath("//p[@class='oxd-text oxd-text--p oxd-text--card-title']");
 	private By profileHeaderName = By.xpath("//p[@class='oxd-userdropdown-name']");
-	private By expense = By.xpath("//label[text()='Expense Type']/../following-sibling::div//div[@class='oxd-select-text-input']");
-	private By claimsubmit= By.xpath("//button[normalize-space()='Submit']");
-	private By closeexpense= By.xpath("//button[normalize-space()='×']");
+	private By expense = By
+			.xpath("//label[text()='Expense Type']/../following-sibling::div//div[@class='oxd-select-text-input']");
+	private By claimsubmit = By.xpath("//button[normalize-space()='Submit']");
+	private By closeexpense = By.xpath("//button[normalize-space()='×']");
 	public String username;
-	private By expensetitle= By.xpath("//h6[normalize-space()='Expenses']");
-	private By assigntitle= By.xpath("//h6[normalize-space()='Assign Claim']");
-	private By expenseheader= By.xpath("//p[@class='oxd-text oxd-text--p oxd-text--card-title']");
+	private By expensetitle = By.xpath("//h6[normalize-space()='Expenses']");
+	private By assigntitle = By.xpath("//h6[normalize-space()='Assign Claim']");
+	private By expenseheader = By.xpath("//p[@class='oxd-text oxd-text--p oxd-text--card-title']");
+	private String dashBoard = "https://opensource-demo.orangehrmlive.com/web/index.php/dashboard/index";
 	WebDriverWait wait;
 
 	public O_ClaimPage(WebDriver driver) {
@@ -73,23 +78,22 @@ public class O_ClaimPage {
 		return driver.findElement(headerField).getText();
 	}
 
-	// click on Logo  to check expense displayed
+	// click on Logo to check expense displayed
 	public String isexpensetitleDisplayed() throws InterruptedException {
 		wait.until(ExpectedConditions.presenceOfElementLocated(expensetitle));
 		driver.findElement(expensetitle).isDisplayed();
 		Thread.sleep(1000);
 		return driver.findElement(expensetitle).getText();
 	}
-	
 
-	// click on Logo  to check expense header displayed
+	// click on Logo to check expense header displayed
 	public String isexpenseheaderDisplayed() throws InterruptedException {
 		wait.until(ExpectedConditions.presenceOfElementLocated(expenseheader));
 		driver.findElement(expenseheader).isDisplayed();
 		Thread.sleep(1000);
 		return driver.findElement(expenseheader).getText();
 	}
-	
+
 	// click on header of window to check if displayed
 	public String isheaderDisplayed() throws InterruptedException {
 		wait.until(ExpectedConditions.presenceOfElementLocated(attachment));
@@ -97,7 +101,7 @@ public class O_ClaimPage {
 		Thread.sleep(1000);
 		return driver.findElement(attachment).getText();
 	}
-	
+
 	// click on header of window to check if displayed
 	public String isassigntitleDisplayed() throws InterruptedException {
 		wait.until(ExpectedConditions.presenceOfElementLocated(assigntitle));
@@ -129,7 +133,7 @@ public class O_ClaimPage {
 
 	}
 
-	// click currency for claim  expense
+	// click currency for claim expense
 
 	public void currencySelect(String currencyName) throws InterruptedException {
 
@@ -145,9 +149,7 @@ public class O_ClaimPage {
 
 	}
 
-	
-
-	// click  expense for claim  
+	// click expense for claim
 
 	public void expenseSelect(String currencyName) throws InterruptedException {
 
@@ -171,48 +173,46 @@ public class O_ClaimPage {
 		driver.findElement(remarks).sendKeys(Text);
 		Thread.sleep(600);
 	}
-	
 
-	// Add final   claim with expense  
+	// Add final claim with expense
 	public void submitClaim() throws InterruptedException {
 		driver.findElement(claimsubmit).isDisplayed();
 		driver.findElement(claimsubmit).click();
-		
+
 		Thread.sleep(600);
 	}
 
-	
 	public void closeExpense() throws InterruptedException {
 		driver.findElement(closeexpense).isDisplayed();
 		driver.findElement(closeexpense).click();
-		
+
 		Thread.sleep(600);
 	}
+
 	// Add notes for claim
 	public void addNotes(String Text) throws InterruptedException {
 		wait.until(ExpectedConditions.presenceOfElementLocated(note));
 
 		driver.findElement(note).click();
 		driver.findElement(note).sendKeys(Text);
-	
-		
+
 	}
 
-	// Add amount  for expense claim
-	public void addExpense(String  amt) throws InterruptedException {
-		wait.until(ExpectedConditions.presenceOfElementLocated(amount));	
+	// Add amount for expense claim
+	public void addExpense(String amt) throws InterruptedException {
+		wait.until(ExpectedConditions.presenceOfElementLocated(amount));
 		driver.findElement(amount).click();
 		driver.findElement(amount).sendKeys(amt);
-		
+
 	}
-	
-	
-	public void addDate( ) throws InterruptedException {
+
+	public void addDate() throws InterruptedException {
 		wait.until(ExpectedConditions.presenceOfElementLocated(date));
 		driver.findElement(date).click();
 		driver.findElement(date).sendKeys("2023-10-10");
-		
+
 	}
+
 	// click create button for claim
 	public void createBtn() throws InterruptedException {
 		wait.until(ExpectedConditions.presenceOfElementLocated(submit));
@@ -271,7 +271,7 @@ public class O_ClaimPage {
 		wait.until(ExpectedConditions.visibilityOfElementLocated(empnamelabel));
 		driver.findElement(empnamelabel).click();
 		driver.findElement(empnamelabel).sendKeys(username);
-		
+
 		Thread.sleep(1000);
 		wait.until(ExpectedConditions.visibilityOfElementLocated(empname));
 		Thread.sleep(3000);
@@ -279,14 +279,14 @@ public class O_ClaimPage {
 
 	}
 
-	
 	public boolean isProfileUserNameDisplayed() {
 		wait.until(ExpectedConditions.presenceOfElementLocated(profileHeaderName));
-		username= driver.findElement(profileHeaderName).getText();
+		username = driver.findElement(profileHeaderName).getText();
 		System.out.println(username);
-	
+
 		return driver.findElement(profileHeaderName).isDisplayed();
 	}
+
 	/**
 	 * 
 	 * @return current logged in username
@@ -295,14 +295,18 @@ public class O_ClaimPage {
 		wait.until(ExpectedConditions.presenceOfElementLocated(profileHeaderName));
 		return driver.findElement(profileHeaderName).getText();
 	}
-	
-	
-	// click create button for claim
-		public void addExpense() throws InterruptedException {
-			wait.until(ExpectedConditions.presenceOfElementLocated(addbtn));
 
-			driver.findElement(addbtn).click();
-			Thread.sleep(8000);
-			//driver.findElement(tt).click();
-		}
+	// click create button for claim
+	public void addExpense() throws InterruptedException {
+		wait.until(ExpectedConditions.presenceOfElementLocated(addbtn));
+
+		driver.findElement(addbtn).click();
+		Thread.sleep(8000);
+		// driver.findElement(tt).click();
+	}
+
+	public O_HomePage goToHome() {
+		driver.navigate().to(dashBoard);
+		return new O_HomePage(driver);
+	}
 }

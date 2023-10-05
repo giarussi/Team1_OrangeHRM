@@ -4,6 +4,7 @@ import java.io.File;
 import java.io.FileInputStream;
 import java.io.IOException;
 import java.lang.reflect.Method;
+import java.text.SimpleDateFormat;
 import java.time.Instant;
 import java.util.Arrays;
 import java.util.LinkedHashMap;
@@ -30,9 +31,15 @@ import org.testng.annotations.AfterClass;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeClass;
+import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.DataProvider;
 import org.testng.internal.annotations.ITest;
 
+import com.aventstack.extentreports.ExtentReports;
+import com.aventstack.extentreports.ExtentTest;
+import com.aventstack.extentreports.Status;
+import com.aventstack.extentreports.reporter.ExtentHtmlReporter;
 import com.google.common.io.Files;
 
 import pages.O_HomePage;
@@ -46,7 +53,40 @@ public class BaseTest {
 	private WebDriver driver;
 	protected O_LoginPage loginPage;
 	static Object[][] obj;
-	
+	public static ExtentReports extent = new ExtentReports();
+	public static ExtentTest test;
+	public static ExtentHtmlReporter sparkReporter;
+	public String timeStamp = null;
+	public String filePath = null;
+	public File extentFile = null;
+
+	@BeforeSuite
+	public void setupdriver() throws InterruptedException, IOException {
+
+		try {
+
+			timeStamp = new SimpleDateFormat("yyyy.MM.dd.HH.mm.ss").format(new java.util.Date());
+
+			filePath = "Reports/extent-report_" + timeStamp + ".html";
+
+			extentFile = new File(filePath);
+
+			extentFile.createNewFile();
+
+			sparkReporter = new ExtentHtmlReporter(filePath);
+
+			extent.attachReporter(sparkReporter);
+
+		} catch (Exception e) {
+
+			// TODO Auto-generated catch block
+
+			System.out.println("Before Class-------" + e.getMessage());
+
+		}
+
+	}
+
 	@BeforeClass
 	public void setup() throws InterruptedException {
 		System.setProperty("webdriver.chromedriver.driver", "Resources/driver/chromedriver.exe");
@@ -72,20 +112,65 @@ public class BaseTest {
 
 	}
 
-	@AfterMethod
-	public void recordFailure(ITestResult result) throws IOException {
-		if (ITestResult.FAILURE == result.getStatus()) {
-			var camera = (TakesScreenshot) driver;
-			File screenshot = camera.getScreenshotAs(OutputType.FILE);
-			System.out.println("Screenshot taken: " + screenshot.getAbsolutePath());
-			Files.move(screenshot, new File("Resources/screenshots/" + result.getName() + ".png"));
-		}
+	@BeforeMethod
+	public void extentCreate(Method testMethod) throws IOException {
 
+		try {
+
+			// extent=extentSetup();
+			// Create a test instance for this class
+			test = extent.createTest(testMethod.getName(), "Description of the test case");
+		} catch (Exception e) {
+			// TODO Auto-generated catch block
+			System.out.println("Before Method-------" + e.getMessage());
+		}
+	}
+
+	/*
+	 * @AfterMethod public void recordFailure(ITestResult result) throws IOException
+	 * { if (ITestResult.FAILURE == result.getStatus()) { var camera =
+	 * (TakesScreenshot) driver; File screenshot =
+	 * camera.getScreenshotAs(OutputType.FILE);
+	 * System.out.println("Screenshot taken: " + screenshot.getAbsolutePath());
+	 * Files.move(screenshot, new File("Resources/screenshots/" + result.getName() +
+	 * ".png")); }
+	 * 
+	 * }
+	 */
+
+	@AfterMethod
+	public void recordFailure1(ITestResult result) {
+		try {
+			if (ITestResult.FAILURE == result.getStatus()) {
+				// Log a failure status in the report
+				try {
+					test.log(Status.FAIL, "Test failed: " + result.getName());
+
+				} catch (Exception e) {
+					System.out.println("Exception---------------------------" + e.getMessage());
+				}
+				// Log the exception details in the report
+				test.log(Status.FAIL, result.getThrowable());
+
+				// Capture a screenshot and attach it to the report
+
+			} else if (ITestResult.SUCCESS == result.getStatus()) {
+				// Log a pass status in the report
+				test.log(Status.PASS, "Test passed: " + result.getName());
+			} else if (ITestResult.SKIP == result.getStatus()) {
+				// Log a skip status in the report
+				test.log(Status.SKIP, "Test skipped: " + result.getName());
+			}
+		} catch (Exception e) {
+			// TODO Auto-generated catch block
+			System.out.println("After Method-------" + e.getMessage());
+		}
 	}
 
 	@AfterClass
 	public void tearDown() {
 		driver.quit();
+		extent.flush();
 	}
 
 	public WindowManager getWindowManager() {

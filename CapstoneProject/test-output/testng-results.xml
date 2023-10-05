@@ -1,17 +1,32 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="20" passed="15" failed="2" skipped="3">
+<testng-results ignored="0" total="23" passed="23" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-10-05T15:53:55 IST" name="Suite" finished-at="2023-10-05T16:02:33 IST" duration-ms="518063">
+  <suite started-at="2023-10-05T18:55:15 IST" name="Suite" finished-at="2023-10-05T19:05:00 IST" duration-ms="585780">
     <groups>
     </groups>
-    <test started-at="2023-10-05T15:53:55 IST" name="TestPackages" finished-at="2023-10-05T16:02:33 IST" duration-ms="518063">
+    <test started-at="2023-10-05T18:55:15 IST" name="TestPackages" finished-at="2023-10-05T19:05:00 IST" duration-ms="585780">
       <class name="loginTests.TestOrangeUserLogin">
-        <test-method is-config="true" signature="setup()[pri:0, instance:loginTests.TestOrangeUserLogin@79207381]" started-at="2023-10-05T15:53:55 IST" name="setup" finished-at="2023-10-05T15:54:12 IST" duration-ms="16089" status="PASS">
+        <test-method is-config="true" signature="setupdriver()[pri:0, instance:loginTests.TestOrangeUserLogin@7dc3712]" started-at="2023-10-05T18:55:14 IST" name="setupdriver" finished-at="2023-10-05T18:55:15 IST" duration-ms="161" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupdriver -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:loginTests.TestOrangeUserLogin@7dc3712]" started-at="2023-10-05T18:55:15 IST" name="setup" finished-at="2023-10-05T18:55:30 IST" duration-ms="15192" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="testInvalidAdminLogin(java.util.HashMap)[pri:0, instance:loginTests.TestOrangeUserLogin@79207381]" started-at="2023-10-05T15:54:13 IST" name="testInvalidAdminLogin" data-provider="getDataFromExcel" finished-at="2023-10-05T15:54:23 IST" duration-ms="10235" status="PASS">
+        <test-method is-config="true" signature="extentCreate(java.lang.reflect.Method)[pri:0, instance:loginTests.TestOrangeUserLogin@7dc3712]" started-at="2023-10-05T18:55:31 IST" name="extentCreate" finished-at="2023-10-05T18:55:31 IST" duration-ms="12" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void loginTests.TestOrangeUserLogin.testInvalidAdminLogin(java.util.HashMap)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- extentCreate -->
+        <test-method signature="testInvalidAdminLogin(java.util.HashMap)[pri:0, instance:loginTests.TestOrangeUserLogin@7dc3712]" started-at="2023-10-05T18:55:31 IST" name="testInvalidAdminLogin" data-provider="getDataFromExcel" finished-at="2023-10-05T18:55:34 IST" duration-ms="2499" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -22,18 +37,29 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testInvalidAdminLogin -->
-        <test-method is-config="true" signature="recordFailure(org.testng.ITestResult)[pri:0, instance:loginTests.TestOrangeUserLogin@79207381]" started-at="2023-10-05T15:54:23 IST" name="recordFailure" finished-at="2023-10-05T15:54:23 IST" duration-ms="3" status="PASS">
+        <test-method is-config="true" signature="recordFailure1(org.testng.ITestResult)[pri:0, instance:loginTests.TestOrangeUserLogin@7dc3712]" started-at="2023-10-05T18:55:34 IST" name="recordFailure1" finished-at="2023-10-05T18:55:34 IST" duration-ms="9" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=testInvalidAdminLogin status=SUCCESS method=TestOrangeUserLogin.testInvalidAdminLogin(java.util.HashMap)[pri:0, instance:loginTests.TestOrangeUserLogin@79207381] output={null}]]]>
+                <![CDATA[[TestResult name=testInvalidAdminLogin status=SUCCESS method=TestOrangeUserLogin.testInvalidAdminLogin(java.util.HashMap)[pri:0, instance:loginTests.TestOrangeUserLogin@7dc3712] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- recordFailure -->
-        <test-method signature="testValidAdminLogin(java.util.HashMap)[pri:0, instance:loginTests.TestOrangeUserLogin@79207381]" started-at="2023-10-05T15:54:23 IST" name="testValidAdminLogin" data-provider="getDataFromExcel" finished-at="2023-10-05T15:54:29 IST" duration-ms="5251" status="PASS">
+        </test-method> <!-- recordFailure1 -->
+        <test-method is-config="true" signature="extentCreate(java.lang.reflect.Method)[pri:0, instance:loginTests.TestOrangeUserLogin@7dc3712]" started-at="2023-10-05T18:55:34 IST" name="extentCreate" finished-at="2023-10-05T18:55:34 IST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void loginTests.TestOrangeUserLogin.testValidAdminLogin(java.util.HashMap)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- extentCreate -->
+        <test-method signature="testValidAdminLogin(java.util.HashMap)[pri:0, instance:loginTests.TestOrangeUserLogin@7dc3712]" started-at="2023-10-05T18:55:34 IST" name="testValidAdminLogin" data-provider="getDataFromExcel" finished-at="2023-10-05T18:55:38 IST" duration-ms="4284" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -44,18 +70,29 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testValidAdminLogin -->
-        <test-method is-config="true" signature="recordFailure(org.testng.ITestResult)[pri:0, instance:loginTests.TestOrangeUserLogin@79207381]" started-at="2023-10-05T15:54:29 IST" name="recordFailure" finished-at="2023-10-05T15:54:29 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="recordFailure1(org.testng.ITestResult)[pri:0, instance:loginTests.TestOrangeUserLogin@7dc3712]" started-at="2023-10-05T18:55:38 IST" name="recordFailure1" finished-at="2023-10-05T18:55:38 IST" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=testValidAdminLogin status=SUCCESS method=TestOrangeUserLogin.testValidAdminLogin(java.util.HashMap)[pri:0, instance:loginTests.TestOrangeUserLogin@79207381] output={null}]]]>
+                <![CDATA[[TestResult name=testValidAdminLogin status=SUCCESS method=TestOrangeUserLogin.testValidAdminLogin(java.util.HashMap)[pri:0, instance:loginTests.TestOrangeUserLogin@7dc3712] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- recordFailure -->
-        <test-method signature="testValidAdminLogin(java.util.HashMap)[pri:0, instance:loginTests.TestOrangeUserLogin@79207381]" started-at="2023-10-05T15:54:29 IST" name="testValidAdminLogin" data-provider="getDataFromExcel" finished-at="2023-10-05T15:54:34 IST" duration-ms="4934" status="PASS">
+        </test-method> <!-- recordFailure1 -->
+        <test-method is-config="true" signature="extentCreate(java.lang.reflect.Method)[pri:0, instance:loginTests.TestOrangeUserLogin@7dc3712]" started-at="2023-10-05T18:55:38 IST" name="extentCreate" finished-at="2023-10-05T18:55:38 IST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void loginTests.TestOrangeUserLogin.testValidAdminLogin(java.util.HashMap)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- extentCreate -->
+        <test-method signature="testValidAdminLogin(java.util.HashMap)[pri:0, instance:loginTests.TestOrangeUserLogin@7dc3712]" started-at="2023-10-05T18:55:38 IST" name="testValidAdminLogin" data-provider="getDataFromExcel" finished-at="2023-10-05T18:55:43 IST" duration-ms="4498" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -66,28 +103,39 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testValidAdminLogin -->
-        <test-method is-config="true" signature="recordFailure(org.testng.ITestResult)[pri:0, instance:loginTests.TestOrangeUserLogin@79207381]" started-at="2023-10-05T15:54:34 IST" name="recordFailure" finished-at="2023-10-05T15:54:34 IST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="recordFailure1(org.testng.ITestResult)[pri:0, instance:loginTests.TestOrangeUserLogin@7dc3712]" started-at="2023-10-05T18:55:43 IST" name="recordFailure1" finished-at="2023-10-05T18:55:43 IST" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=testValidAdminLogin status=SUCCESS method=TestOrangeUserLogin.testValidAdminLogin(java.util.HashMap)[pri:0, instance:loginTests.TestOrangeUserLogin@79207381] output={null}]]]>
+                <![CDATA[[TestResult name=testValidAdminLogin status=SUCCESS method=TestOrangeUserLogin.testValidAdminLogin(java.util.HashMap)[pri:0, instance:loginTests.TestOrangeUserLogin@7dc3712] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- recordFailure -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:loginTests.TestOrangeUserLogin@79207381]" started-at="2023-10-05T15:54:34 IST" name="tearDown" finished-at="2023-10-05T15:54:34 IST" duration-ms="546" status="PASS">
+        </test-method> <!-- recordFailure1 -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:loginTests.TestOrangeUserLogin@7dc3712]" started-at="2023-10-05T18:55:43 IST" name="tearDown" finished-at="2023-10-05T18:55:43 IST" duration-ms="737" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- loginTests.TestOrangeUserLogin -->
       <class name="claimTests.TestOrangeDashboardClaim">
-        <test-method is-config="true" signature="setup()[pri:0, instance:claimTests.TestOrangeDashboardClaim@23f5b5dc]" started-at="2023-10-05T16:01:55 IST" name="setup" finished-at="2023-10-05T16:02:09 IST" duration-ms="13624" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:claimTests.TestOrangeDashboardClaim@78452606]" started-at="2023-10-05T19:04:35 IST" name="setup" finished-at="2023-10-05T19:04:46 IST" duration-ms="11142" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="testClaimDashboard(java.util.HashMap)[pri:0, instance:claimTests.TestOrangeDashboardClaim@23f5b5dc]" started-at="2023-10-05T16:02:09 IST" name="testClaimDashboard" data-provider="getDataFromExcel" finished-at="2023-10-05T16:02:33 IST" duration-ms="24229" status="PASS">
+        <test-method is-config="true" signature="extentCreate(java.lang.reflect.Method)[pri:0, instance:claimTests.TestOrangeDashboardClaim@78452606]" started-at="2023-10-05T19:04:46 IST" name="extentCreate" finished-at="2023-10-05T19:04:46 IST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void claimTests.TestOrangeDashboardClaim.testClaimDashboard(java.util.HashMap) throws java.lang.InterruptedException]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- extentCreate -->
+        <test-method signature="testClaimDashboard(java.util.HashMap)[pri:0, instance:claimTests.TestOrangeDashboardClaim@78452606]" started-at="2023-10-05T19:04:46 IST" name="testClaimDashboard" data-provider="getDataFromExcel" finished-at="2023-10-05T19:05:00 IST" duration-ms="13792" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -98,28 +146,39 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testClaimDashboard -->
-        <test-method is-config="true" signature="recordFailure(org.testng.ITestResult)[pri:0, instance:claimTests.TestOrangeDashboardClaim@23f5b5dc]" started-at="2023-10-05T16:02:33 IST" name="recordFailure" finished-at="2023-10-05T16:02:33 IST" duration-ms="2" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:claimTests.TestOrangeDashboardClaim@78452606]" started-at="2023-10-05T19:05:00 IST" name="tearDown" finished-at="2023-10-05T19:05:00 IST" duration-ms="601" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="recordFailure1(org.testng.ITestResult)[pri:0, instance:claimTests.TestOrangeDashboardClaim@78452606]" started-at="2023-10-05T19:05:00 IST" name="recordFailure1" finished-at="2023-10-05T19:05:00 IST" duration-ms="0" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=testClaimDashboard status=SUCCESS method=TestOrangeDashboardClaim.testClaimDashboard(java.util.HashMap)[pri:0, instance:claimTests.TestOrangeDashboardClaim@23f5b5dc] output={null}]]]>
+                <![CDATA[[TestResult name=testClaimDashboard status=SUCCESS method=TestOrangeDashboardClaim.testClaimDashboard(java.util.HashMap)[pri:0, instance:claimTests.TestOrangeDashboardClaim@78452606] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- recordFailure -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:claimTests.TestOrangeDashboardClaim@23f5b5dc]" started-at="2023-10-05T16:02:33 IST" name="tearDown" finished-at="2023-10-05T16:02:33 IST" duration-ms="497" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
+        </test-method> <!-- recordFailure1 -->
       </class> <!-- claimTests.TestOrangeDashboardClaim -->
       <class name="homePageTests.TestHomePageSections">
-        <test-method is-config="true" signature="setup()[pri:0, instance:homePageTests.TestHomePageSections@821330f]" started-at="2023-10-05T15:58:49 IST" name="setup" finished-at="2023-10-05T15:59:03 IST" duration-ms="14477" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:homePageTests.TestHomePageSections@4470fbd6]" started-at="2023-10-05T19:01:31 IST" name="setup" finished-at="2023-10-05T19:01:43 IST" duration-ms="12475" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="testDashboardSections(java.util.HashMap)[pri:0, instance:homePageTests.TestHomePageSections@821330f]" started-at="2023-10-05T15:59:03 IST" name="testDashboardSections" data-provider="getDataFromExcel" finished-at="2023-10-05T15:59:17 IST" duration-ms="13083" status="PASS">
+        <test-method is-config="true" signature="extentCreate(java.lang.reflect.Method)[pri:0, instance:homePageTests.TestHomePageSections@4470fbd6]" started-at="2023-10-05T19:01:43 IST" name="extentCreate" finished-at="2023-10-05T19:01:43 IST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void homePageTests.TestHomePageSections.testDashboardSections(java.util.HashMap)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- extentCreate -->
+        <test-method signature="testDashboardSections(java.util.HashMap)[pri:0, instance:homePageTests.TestHomePageSections@4470fbd6]" started-at="2023-10-05T19:01:43 IST" name="testDashboardSections" data-provider="getDataFromExcel" finished-at="2023-10-05T19:01:48 IST" duration-ms="4189" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -130,28 +189,28 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testDashboardSections -->
-        <test-method is-config="true" signature="recordFailure(org.testng.ITestResult)[pri:0, instance:homePageTests.TestHomePageSections@821330f]" started-at="2023-10-05T15:59:17 IST" name="recordFailure" finished-at="2023-10-05T15:59:17 IST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="recordFailure1(org.testng.ITestResult)[pri:0, instance:homePageTests.TestHomePageSections@4470fbd6]" started-at="2023-10-05T19:01:48 IST" name="recordFailure1" finished-at="2023-10-05T19:01:48 IST" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=testDashboardSections status=SUCCESS method=TestHomePageSections.testDashboardSections(java.util.HashMap)[pri:0, instance:homePageTests.TestHomePageSections@821330f] output={null}]]]>
+                <![CDATA[[TestResult name=testDashboardSections status=SUCCESS method=TestHomePageSections.testDashboardSections(java.util.HashMap)[pri:0, instance:homePageTests.TestHomePageSections@4470fbd6] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- recordFailure -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:homePageTests.TestHomePageSections@821330f]" started-at="2023-10-05T15:59:17 IST" name="tearDown" finished-at="2023-10-05T15:59:17 IST" duration-ms="613" status="PASS">
+        </test-method> <!-- recordFailure1 -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:homePageTests.TestHomePageSections@4470fbd6]" started-at="2023-10-05T19:01:48 IST" name="tearDown" finished-at="2023-10-05T19:01:48 IST" duration-ms="463" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- homePageTests.TestHomePageSections -->
       <class name="pimTests.TestPIMFunctionality">
-        <test-method is-config="true" signature="setup()[pri:0, instance:pimTests.TestPIMFunctionality@1b1cfb87]" started-at="2023-10-05T15:57:56 IST" name="setup" finished-at="2023-10-05T15:58:11 IST" duration-ms="14803" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:pimTests.TestPIMFunctionality@448c8166]" started-at="2023-10-05T19:00:54 IST" name="setup" finished-at="2023-10-05T19:01:06 IST" duration-ms="12000" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="testCreateUser(java.util.HashMap)[pri:0, instance:pimTests.TestPIMFunctionality@1b1cfb87]" started-at="2023-10-05T15:58:11 IST" name="testCreateUser" data-provider="getDataFromExcel" finished-at="2023-10-05T15:58:37 IST" duration-ms="26682" status="PASS">
+        <test-method signature="testCreateUser(java.util.HashMap)[pri:0, instance:pimTests.TestPIMFunctionality@448c8166]" started-at="2023-10-05T19:01:06 IST" name="testCreateUser" data-provider="getDataFromExcel" finished-at="2023-10-05T19:01:22 IST" duration-ms="15365" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -162,18 +221,40 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testCreateUser -->
-        <test-method is-config="true" signature="recordFailure(org.testng.ITestResult)[pri:0, instance:pimTests.TestPIMFunctionality@1b1cfb87]" started-at="2023-10-05T15:58:37 IST" name="recordFailure" finished-at="2023-10-05T15:58:37 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="extentCreate(java.lang.reflect.Method)[pri:0, instance:pimTests.TestPIMFunctionality@448c8166]" started-at="2023-10-05T19:01:06 IST" name="extentCreate" finished-at="2023-10-05T19:01:06 IST" duration-ms="0" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=testCreateUser status=SUCCESS method=TestPIMFunctionality.testCreateUser(java.util.HashMap)[pri:0, instance:pimTests.TestPIMFunctionality@1b1cfb87] output={null}]]]>
+                <![CDATA[public void pimTests.TestPIMFunctionality.testCreateUser(java.util.HashMap) throws java.lang.InterruptedException]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- recordFailure -->
-        <test-method signature="testPIMPageLinks(java.util.HashMap)[pri:0, instance:pimTests.TestPIMFunctionality@1b1cfb87]" started-at="2023-10-05T15:58:37 IST" name="testPIMPageLinks" data-provider="getDataFromExcel" finished-at="2023-10-05T15:58:44 IST" duration-ms="7022" status="PASS">
+        </test-method> <!-- extentCreate -->
+        <test-method is-config="true" signature="recordFailure1(org.testng.ITestResult)[pri:0, instance:pimTests.TestPIMFunctionality@448c8166]" started-at="2023-10-05T19:01:22 IST" name="recordFailure1" finished-at="2023-10-05T19:01:22 IST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testCreateUser status=SUCCESS method=TestPIMFunctionality.testCreateUser(java.util.HashMap)[pri:0, instance:pimTests.TestPIMFunctionality@448c8166] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- recordFailure1 -->
+        <test-method is-config="true" signature="extentCreate(java.lang.reflect.Method)[pri:0, instance:pimTests.TestPIMFunctionality@448c8166]" started-at="2023-10-05T19:01:22 IST" name="extentCreate" finished-at="2023-10-05T19:01:22 IST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void pimTests.TestPIMFunctionality.testPIMPageLinks(java.util.HashMap)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- extentCreate -->
+        <test-method signature="testPIMPageLinks(java.util.HashMap)[pri:0, instance:pimTests.TestPIMFunctionality@448c8166]" started-at="2023-10-05T19:01:22 IST" name="testPIMPageLinks" data-provider="getDataFromExcel" finished-at="2023-10-05T19:01:28 IST" duration-ms="5960" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -184,43 +265,54 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testPIMPageLinks -->
-        <test-method is-config="true" signature="recordFailure(org.testng.ITestResult)[pri:0, instance:pimTests.TestPIMFunctionality@1b1cfb87]" started-at="2023-10-05T15:58:44 IST" name="recordFailure" finished-at="2023-10-05T15:58:44 IST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="recordFailure1(org.testng.ITestResult)[pri:0, instance:pimTests.TestPIMFunctionality@448c8166]" started-at="2023-10-05T19:01:28 IST" name="recordFailure1" finished-at="2023-10-05T19:01:28 IST" duration-ms="0" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=testPIMPageLinks status=SUCCESS method=TestPIMFunctionality.testPIMPageLinks(java.util.HashMap)[pri:0, instance:pimTests.TestPIMFunctionality@1b1cfb87] output={null}]]]>
+                <![CDATA[[TestResult name=testPIMPageLinks status=SUCCESS method=TestPIMFunctionality.testPIMPageLinks(java.util.HashMap)[pri:0, instance:pimTests.TestPIMFunctionality@448c8166] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- recordFailure -->
-        <test-method signature="testCustomUserLogin()[pri:0, instance:pimTests.TestPIMFunctionality@1b1cfb87]" started-at="2023-10-05T15:58:44 IST" name="testCustomUserLogin" finished-at="2023-10-05T15:58:48 IST" depends-on-methods="pimTests.TestPIMFunctionality.testCreateUser" duration-ms="3858" status="PASS">
+        </test-method> <!-- recordFailure1 -->
+        <test-method signature="testCustomUserLogin()[pri:0, instance:pimTests.TestPIMFunctionality@448c8166]" started-at="2023-10-05T19:01:28 IST" name="testCustomUserLogin" finished-at="2023-10-05T19:01:30 IST" depends-on-methods="pimTests.TestPIMFunctionality.testCreateUser" duration-ms="2730" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testCustomUserLogin -->
-        <test-method is-config="true" signature="recordFailure(org.testng.ITestResult)[pri:0, instance:pimTests.TestPIMFunctionality@1b1cfb87]" started-at="2023-10-05T15:58:48 IST" name="recordFailure" finished-at="2023-10-05T15:58:48 IST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="extentCreate(java.lang.reflect.Method)[pri:0, instance:pimTests.TestPIMFunctionality@448c8166]" started-at="2023-10-05T19:01:28 IST" name="extentCreate" finished-at="2023-10-05T19:01:28 IST" duration-ms="0" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=testCustomUserLogin status=SUCCESS method=TestPIMFunctionality.testCustomUserLogin()[pri:0, instance:pimTests.TestPIMFunctionality@1b1cfb87] output={null}]]]>
+                <![CDATA[public void pimTests.TestPIMFunctionality.testCustomUserLogin()]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- recordFailure -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:pimTests.TestPIMFunctionality@1b1cfb87]" started-at="2023-10-05T15:58:48 IST" name="tearDown" finished-at="2023-10-05T15:58:49 IST" duration-ms="567" status="PASS">
+        </test-method> <!-- extentCreate -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:pimTests.TestPIMFunctionality@448c8166]" started-at="2023-10-05T19:01:30 IST" name="tearDown" finished-at="2023-10-05T19:01:31 IST" duration-ms="416" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="recordFailure1(org.testng.ITestResult)[pri:0, instance:pimTests.TestPIMFunctionality@448c8166]" started-at="2023-10-05T19:01:30 IST" name="recordFailure1" finished-at="2023-10-05T19:01:30 IST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testCustomUserLogin status=SUCCESS method=TestPIMFunctionality.testCustomUserLogin()[pri:0, instance:pimTests.TestPIMFunctionality@448c8166] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- recordFailure1 -->
       </class> <!-- pimTests.TestPIMFunctionality -->
       <class name="recruitmentPageTests.TestRecruitmentPageTabs">
-        <test-method is-config="true" signature="setup()[pri:0, instance:recruitmentPageTests.TestRecruitmentPageTabs@6f43c82]" started-at="2023-10-05T15:59:17 IST" name="setup" finished-at="2023-10-05T15:59:31 IST" duration-ms="13909" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:recruitmentPageTests.TestRecruitmentPageTabs@15d49048]" started-at="2023-10-05T19:01:48 IST" name="setup" finished-at="2023-10-05T19:01:59 IST" duration-ms="11326" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="testRecruitmentPageTabs(java.util.HashMap)[pri:0, instance:recruitmentPageTests.TestRecruitmentPageTabs@6f43c82]" started-at="2023-10-05T15:59:31 IST" name="testRecruitmentPageTabs" data-provider="getDataFromExcel" finished-at="2023-10-05T15:59:50 IST" duration-ms="18504" status="PASS">
+        <test-method signature="testRecruitmentPageTabs(java.util.HashMap)[pri:0, instance:recruitmentPageTests.TestRecruitmentPageTabs@15d49048]" started-at="2023-10-05T19:01:59 IST" name="testRecruitmentPageTabs" data-provider="getDataFromExcel" finished-at="2023-10-05T19:02:11 IST" duration-ms="11797" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -231,254 +323,72 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testRecruitmentPageTabs -->
-        <test-method is-config="true" signature="recordFailure(org.testng.ITestResult)[pri:0, instance:recruitmentPageTests.TestRecruitmentPageTabs@6f43c82]" started-at="2023-10-05T15:59:50 IST" name="recordFailure" finished-at="2023-10-05T15:59:50 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="extentCreate(java.lang.reflect.Method)[pri:0, instance:recruitmentPageTests.TestRecruitmentPageTabs@15d49048]" started-at="2023-10-05T19:01:59 IST" name="extentCreate" finished-at="2023-10-05T19:01:59 IST" duration-ms="0" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=testRecruitmentPageTabs status=SUCCESS method=TestRecruitmentPageTabs.testRecruitmentPageTabs(java.util.HashMap)[pri:0, instance:recruitmentPageTests.TestRecruitmentPageTabs@6f43c82] output={null}]]]>
+                <![CDATA[public void recruitmentPageTests.TestRecruitmentPageTabs.testRecruitmentPageTabs(java.util.HashMap)]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- recordFailure -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:recruitmentPageTests.TestRecruitmentPageTabs@6f43c82]" started-at="2023-10-05T15:59:50 IST" name="tearDown" finished-at="2023-10-05T15:59:50 IST" duration-ms="482" status="PASS">
+        </test-method> <!-- extentCreate -->
+        <test-method is-config="true" signature="recordFailure1(org.testng.ITestResult)[pri:0, instance:recruitmentPageTests.TestRecruitmentPageTabs@15d49048]" started-at="2023-10-05T19:02:11 IST" name="recordFailure1" finished-at="2023-10-05T19:02:11 IST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testRecruitmentPageTabs status=SUCCESS method=TestRecruitmentPageTabs.testRecruitmentPageTabs(java.util.HashMap)[pri:0, instance:recruitmentPageTests.TestRecruitmentPageTabs@15d49048] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- recordFailure1 -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:recruitmentPageTests.TestRecruitmentPageTabs@15d49048]" started-at="2023-10-05T19:02:11 IST" name="tearDown" finished-at="2023-10-05T19:02:12 IST" duration-ms="509" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- recruitmentPageTests.TestRecruitmentPageTabs -->
       <class name="recruitmentPageTests.TestVacanciesCandidature">
-        <test-method is-config="true" signature="setup()[pri:0, instance:recruitmentPageTests.TestVacanciesCandidature@5db6b9cd]" started-at="2023-10-05T16:01:14 IST" name="setup" finished-at="2023-10-05T16:01:27 IST" duration-ms="13213" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:recruitmentPageTests.TestVacanciesCandidature@7098b907]" started-at="2023-10-05T19:03:18 IST" name="setup" finished-at="2023-10-05T19:03:29 IST" duration-ms="11696" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="testCreateVacancy(java.util.HashMap)[pri:0, instance:recruitmentPageTests.TestVacanciesCandidature@5db6b9cd]" started-at="2023-10-05T16:01:27 IST" name="testCreateVacancy" data-provider="getDataFromExcel" finished-at="2023-10-05T16:01:50 IST" duration-ms="22745" status="FAIL">
+        <test-method is-config="true" signature="extentCreate(java.lang.reflect.Method)[pri:0, instance:recruitmentPageTests.TestVacanciesCandidature@7098b907]" started-at="2023-10-05T19:03:29 IST" name="extentCreate" finished-at="2023-10-05T19:03:29 IST" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[{Username=Admin, Password=admin123, VacancyName=Vacancy for CapstoneProject, JobTitle=QA Lead, Description=Automation Tester, HiringManager=Orange Test, NumOfPositions=2}]]>
+                <![CDATA[public void recruitmentPageTests.TestVacanciesCandidature.testCreateVacancy(java.util.HashMap) throws java.lang.InterruptedException]]>
               </value>
             </param>
           </params>
-          <exception class="org.openqa.selenium.NoSuchElementException">
-            <message>
-              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//div[@class='oxd-autocomplete-option']"}
-  (Session info: chrome=117.0.5938.149)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
-Build info: version: '4.11.0', revision: '040bc5406b'
-System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.8'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [8325dd918c773bfb998c76f28586b8d6, findElement {using=xpath, value=//div[@class='oxd-autocomplete-option']}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 117.0.5938.149, chrome: {chromedriverVersion: 117.0.5938.149 (e3344ddefa1..., userDataDir: C:\Users\U1230894\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:52154}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:52154/devtoo..., se:cdpVersion: 117.0.5938.149, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 8325dd918c773bfb998c76f28586b8d6]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//div[@class='oxd-autocomplete-option']"}
-  (Session info: chrome=117.0.5938.149)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
-Build info: version: '4.11.0', revision: '040bc5406b'
-System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.8'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [8325dd918c773bfb998c76f28586b8d6, findElement {using=xpath, value=//div[@class='oxd-autocomplete-option']}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 117.0.5938.149, chrome: {chromedriverVersion: 117.0.5938.149 (e3344ddefa1..., userDataDir: C:\Users\U1230894\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:52154}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:52154/devtoo..., se:cdpVersion: 117.0.5938.149, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 8325dd918c773bfb998c76f28586b8d6
-at jdk.internal.reflect.GeneratedConstructorAccessor26.newInstance(Unknown Source)
-at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
-at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
-at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:349)
-at pages.O_RecruitmentPage.setHiringManager(O_RecruitmentPage.java:111)
-at recruitmentPageTests.TestVacanciesCandidature.testCreateVacancy(TestVacanciesCandidature.java:34)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:848)
-at org.testng.TestRunner.run(TestRunner.java:621)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
-at org.testng.SuiteRunner.run(SuiteRunner.java:336)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
-at org.testng.TestNG.runSuites(TestNG.java:1114)
-at org.testng.TestNG.run(TestNG.java:1082)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- extentCreate -->
+        <test-method signature="testCreateVacancy(java.util.HashMap)[pri:0, instance:recruitmentPageTests.TestVacanciesCandidature@7098b907]" started-at="2023-10-05T19:03:29 IST" name="testCreateVacancy" data-provider="getDataFromExcel" finished-at="2023-10-05T19:03:59 IST" duration-ms="29703" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{Username=Admin, Password=admin123, VacancyName=Vacancy for CapstoneProject, JobTitle=QA Lead, Description=Automation Tester, HiringManager=Orange Test, NumOfPositions=2, FirstName=Hermoine, MiddleName=Jean, LastName=Granger}]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testCreateVacancy -->
-        <test-method is-config="true" signature="recordFailure(org.testng.ITestResult)[pri:0, instance:recruitmentPageTests.TestVacanciesCandidature@5db6b9cd]" started-at="2023-10-05T16:01:50 IST" name="recordFailure" finished-at="2023-10-05T16:01:51 IST" duration-ms="773" status="PASS">
+        <test-method is-config="true" signature="recordFailure1(org.testng.ITestResult)[pri:0, instance:recruitmentPageTests.TestVacanciesCandidature@7098b907]" started-at="2023-10-05T19:03:59 IST" name="recordFailure1" finished-at="2023-10-05T19:03:59 IST" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=testCreateVacancy status=FAILURE method=TestVacanciesCandidature.testCreateVacancy(java.util.HashMap)[pri:0, instance:recruitmentPageTests.TestVacanciesCandidature@5db6b9cd] output={null}]]]>
+                <![CDATA[[TestResult name=testCreateVacancy status=SUCCESS method=TestVacanciesCandidature.testCreateVacancy(java.util.HashMap)[pri:0, instance:recruitmentPageTests.TestVacanciesCandidature@7098b907] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- recordFailure -->
-        <test-method signature="testVacancySearch(java.util.HashMap)[pri:0, instance:recruitmentPageTests.TestVacanciesCandidature@5db6b9cd]" started-at="2023-10-05T16:01:51 IST" name="testVacancySearch" finished-at="2023-10-05T16:01:51 IST" depends-on-methods="recruitmentPageTests.TestVacanciesCandidature.testCreateVacancy" duration-ms="0" status="SKIP">
-          <exception class="java.lang.Throwable">
-            <message>
-              <![CDATA[Method recruitmentPageTests.TestVacanciesCandidature.testVacancySearch() on instance recruitmentPageTests.TestVacanciesCandidature@5db6b9cd depends on not successfully finished methods 
-[recruitmentPageTests.TestVacanciesCandidature.testCreateVacancy() on instance recruitmentPageTests.TestVacanciesCandidature@5db6b9cd]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.Throwable: Method recruitmentPageTests.TestVacanciesCandidature.testVacancySearch() on instance recruitmentPageTests.TestVacanciesCandidature@5db6b9cd depends on not successfully finished methods 
-[recruitmentPageTests.TestVacanciesCandidature.testCreateVacancy() on instance recruitmentPageTests.TestVacanciesCandidature@5db6b9cd]
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:156)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:848)
-at org.testng.TestRunner.run(TestRunner.java:621)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
-at org.testng.SuiteRunner.run(SuiteRunner.java:336)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
-at org.testng.TestNG.runSuites(TestNG.java:1114)
-at org.testng.TestNG.run(TestNG.java:1082)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.Throwable -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testVacancySearch -->
-        <test-method signature="testCreateCandidate(java.util.HashMap)[pri:0, instance:recruitmentPageTests.TestVacanciesCandidature@5db6b9cd]" started-at="2023-10-05T16:01:51 IST" name="testCreateCandidate" finished-at="2023-10-05T16:01:51 IST" depends-on-methods="recruitmentPageTests.TestVacanciesCandidature.testVacancySearch" duration-ms="1" status="SKIP">
-          <exception class="java.lang.Throwable">
-            <message>
-              <![CDATA[Method recruitmentPageTests.TestVacanciesCandidature.testCreateCandidate() on instance recruitmentPageTests.TestVacanciesCandidature@5db6b9cd depends on not successfully finished methods 
-[recruitmentPageTests.TestVacanciesCandidature.testVacancySearch() on instance recruitmentPageTests.TestVacanciesCandidature@5db6b9cd]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.Throwable: Method recruitmentPageTests.TestVacanciesCandidature.testCreateCandidate() on instance recruitmentPageTests.TestVacanciesCandidature@5db6b9cd depends on not successfully finished methods 
-[recruitmentPageTests.TestVacanciesCandidature.testVacancySearch() on instance recruitmentPageTests.TestVacanciesCandidature@5db6b9cd]
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:156)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:848)
-at org.testng.TestRunner.run(TestRunner.java:621)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
-at org.testng.SuiteRunner.run(SuiteRunner.java:336)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
-at org.testng.TestNG.runSuites(TestNG.java:1114)
-at org.testng.TestNG.run(TestNG.java:1082)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.Throwable -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testCreateCandidate -->
-        <test-method signature="testsearchCandidature(java.util.HashMap)[pri:0, instance:recruitmentPageTests.TestVacanciesCandidature@5db6b9cd]" started-at="2023-10-05T16:01:51 IST" name="testsearchCandidature" finished-at="2023-10-05T16:01:51 IST" depends-on-methods="recruitmentPageTests.TestVacanciesCandidature.testCreateCandidate" duration-ms="0" status="SKIP">
-          <exception class="java.lang.Throwable">
-            <message>
-              <![CDATA[Method recruitmentPageTests.TestVacanciesCandidature.testsearchCandidature() on instance recruitmentPageTests.TestVacanciesCandidature@5db6b9cd depends on not successfully finished methods 
-[recruitmentPageTests.TestVacanciesCandidature.testCreateCandidate() on instance recruitmentPageTests.TestVacanciesCandidature@5db6b9cd]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.Throwable: Method recruitmentPageTests.TestVacanciesCandidature.testsearchCandidature() on instance recruitmentPageTests.TestVacanciesCandidature@5db6b9cd depends on not successfully finished methods 
-[recruitmentPageTests.TestVacanciesCandidature.testCreateCandidate() on instance recruitmentPageTests.TestVacanciesCandidature@5db6b9cd]
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:156)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:848)
-at org.testng.TestRunner.run(TestRunner.java:621)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
-at org.testng.SuiteRunner.run(SuiteRunner.java:336)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
-at org.testng.TestNG.runSuites(TestNG.java:1114)
-at org.testng.TestNG.run(TestNG.java:1082)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.Throwable -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testsearchCandidature -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:recruitmentPageTests.TestVacanciesCandidature@5db6b9cd]" started-at="2023-10-05T16:01:51 IST" name="tearDown" finished-at="2023-10-05T16:01:55 IST" duration-ms="4257" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- recruitmentPageTests.TestVacanciesCandidature -->
-      <class name="leaveTests.TestAddEntitlement">
-        <test-method is-config="true" signature="setup()[pri:0, instance:leaveTests.TestAddEntitlement@34bde49d]" started-at="2023-10-05T15:56:07 IST" name="setup" finished-at="2023-10-05T15:56:21 IST" duration-ms="13855" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method signature="testLeaveEntitlement(java.util.HashMap)[pri:0, instance:leaveTests.TestAddEntitlement@34bde49d]" started-at="2023-10-05T15:56:21 IST" name="testLeaveEntitlement" data-provider="getDataFromExcel" finished-at="2023-10-05T15:57:44 IST" duration-ms="83436" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[{Username=Admin, Password=admin123, Leave_Type=CAN - Vacation}]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testLeaveEntitlement -->
-        <test-method is-config="true" signature="recordFailure(org.testng.ITestResult)[pri:0, instance:leaveTests.TestAddEntitlement@34bde49d]" started-at="2023-10-05T15:57:44 IST" name="recordFailure" finished-at="2023-10-05T15:57:44 IST" duration-ms="1" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=testLeaveEntitlement status=SUCCESS method=TestAddEntitlement.testLeaveEntitlement(java.util.HashMap)[pri:0, instance:leaveTests.TestAddEntitlement@34bde49d] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- recordFailure -->
-        <test-method signature="testValidateTabs(java.util.HashMap)[pri:0, instance:leaveTests.TestAddEntitlement@34bde49d]" started-at="2023-10-05T15:57:45 IST" name="testValidateTabs" data-provider="getDataFromExcel" finished-at="2023-10-05T15:57:55 IST" duration-ms="10374" status="FAIL">
+        </test-method> <!-- recordFailure1 -->
+        <test-method signature="testVacancySearch(java.util.HashMap)[pri:0, instance:recruitmentPageTests.TestVacanciesCandidature@7098b907]" started-at="2023-10-05T19:03:59 IST" name="testVacancySearch" data-provider="getDataFromExcel" finished-at="2023-10-05T19:04:09 IST" depends-on-methods="recruitmentPageTests.TestVacanciesCandidature.testCreateVacancy" duration-ms="9663" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -486,100 +396,294 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
               </value>
             </param>
           </params>
-          <exception class="org.openqa.selenium.TimeoutException">
-            <message>
-              <![CDATA[Expected condition failed: waiting for presence of element located by: By.name: username (tried for 10 second(s) with 500 milliseconds interval)]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for presence of element located by: By.name: username (tried for 10 second(s) with 500 milliseconds interval)
-at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
-at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:230)
-at pages.O_LoginPage.setUserName(O_LoginPage.java:36)
-at leaveTests.TestAddEntitlement.testValidateTabs(TestAddEntitlement.java:13)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:848)
-at org.testng.TestRunner.run(TestRunner.java:621)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
-at org.testng.SuiteRunner.run(SuiteRunner.java:336)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
-at org.testng.TestNG.runSuites(TestNG.java:1114)
-at org.testng.TestNG.run(TestNG.java:1082)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"*[name='username']"}
-  (Session info: chrome=117.0.5938.149)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
-Build info: version: '4.11.0', revision: '040bc5406b'
-System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.8'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [27a3a263566ca073a7a357d22e7e401c, findElement {using=name, value=username}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 117.0.5938.149, chrome: {chromedriverVersion: 117.0.5938.149 (e3344ddefa1..., userDataDir: C:\Users\U1230894\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51751}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:51751/devtoo..., se:cdpVersion: 117.0.5938.149, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 27a3a263566ca073a7a357d22e7e401c
-at jdk.internal.reflect.GeneratedConstructorAccessor26.newInstance(Unknown Source)
-at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
-at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
-at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:349)
-at org.openqa.selenium.support.ui.ExpectedConditions$6.apply(ExpectedConditions.java:171)
-at org.openqa.selenium.support.ui.ExpectedConditions$6.apply(ExpectedConditions.java:168)
-at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:205)
-... 30 more
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.TimeoutException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testValidateTabs -->
-        <test-method is-config="true" signature="recordFailure(org.testng.ITestResult)[pri:0, instance:leaveTests.TestAddEntitlement@34bde49d]" started-at="2023-10-05T15:57:55 IST" name="recordFailure" finished-at="2023-10-05T15:57:55 IST" duration-ms="186" status="PASS">
+        </test-method> <!-- testVacancySearch -->
+        <test-method is-config="true" signature="extentCreate(java.lang.reflect.Method)[pri:0, instance:recruitmentPageTests.TestVacanciesCandidature@7098b907]" started-at="2023-10-05T19:03:59 IST" name="extentCreate" finished-at="2023-10-05T19:03:59 IST" duration-ms="0" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=testValidateTabs status=FAILURE method=TestAddEntitlement.testValidateTabs(java.util.HashMap)[pri:0, instance:leaveTests.TestAddEntitlement@34bde49d] output={null}]]]>
+                <![CDATA[public void recruitmentPageTests.TestVacanciesCandidature.testVacancySearch(java.util.HashMap) throws java.lang.InterruptedException]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- recordFailure -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:leaveTests.TestAddEntitlement@34bde49d]" started-at="2023-10-05T15:57:55 IST" name="tearDown" finished-at="2023-10-05T15:57:56 IST" duration-ms="645" status="PASS">
+        </test-method> <!-- extentCreate -->
+        <test-method is-config="true" signature="recordFailure1(org.testng.ITestResult)[pri:0, instance:recruitmentPageTests.TestVacanciesCandidature@7098b907]" started-at="2023-10-05T19:04:09 IST" name="recordFailure1" finished-at="2023-10-05T19:04:09 IST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testVacancySearch status=SUCCESS method=TestVacanciesCandidature.testVacancySearch(java.util.HashMap)[pri:0, instance:recruitmentPageTests.TestVacanciesCandidature@7098b907] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- recordFailure1 -->
+        <test-method signature="testCreateCandidate(java.util.HashMap)[pri:0, instance:recruitmentPageTests.TestVacanciesCandidature@7098b907]" started-at="2023-10-05T19:04:09 IST" name="testCreateCandidate" data-provider="getDataFromExcel" finished-at="2023-10-05T19:04:24 IST" depends-on-methods="recruitmentPageTests.TestVacanciesCandidature.testVacancySearch" duration-ms="15037" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{Username=Admin, Password=admin123, FirstName=Ron, MiddleName=Arthur, LastName=Weasley, Email=ron@example.com}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testCreateCandidate -->
+        <test-method is-config="true" signature="extentCreate(java.lang.reflect.Method)[pri:0, instance:recruitmentPageTests.TestVacanciesCandidature@7098b907]" started-at="2023-10-05T19:04:09 IST" name="extentCreate" finished-at="2023-10-05T19:04:09 IST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void recruitmentPageTests.TestVacanciesCandidature.testCreateCandidate(java.util.HashMap) throws java.lang.InterruptedException]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- extentCreate -->
+        <test-method is-config="true" signature="recordFailure1(org.testng.ITestResult)[pri:0, instance:recruitmentPageTests.TestVacanciesCandidature@7098b907]" started-at="2023-10-05T19:04:24 IST" name="recordFailure1" finished-at="2023-10-05T19:04:24 IST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testCreateCandidate status=SUCCESS method=TestVacanciesCandidature.testCreateCandidate(java.util.HashMap)[pri:0, instance:recruitmentPageTests.TestVacanciesCandidature@7098b907] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- recordFailure1 -->
+        <test-method signature="testsearchCandidature(java.util.HashMap)[pri:0, instance:recruitmentPageTests.TestVacanciesCandidature@7098b907]" started-at="2023-10-05T19:04:24 IST" name="testsearchCandidature" data-provider="getDataFromExcel" finished-at="2023-10-05T19:04:34 IST" depends-on-methods="recruitmentPageTests.TestVacanciesCandidature.testCreateCandidate" duration-ms="10595" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{Username=Admin, Password=admin123, FirstName=Ron, MiddleName=Arthur, LastName=Weasley, Email=ron@example.com}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testsearchCandidature -->
+        <test-method is-config="true" signature="extentCreate(java.lang.reflect.Method)[pri:0, instance:recruitmentPageTests.TestVacanciesCandidature@7098b907]" started-at="2023-10-05T19:04:24 IST" name="extentCreate" finished-at="2023-10-05T19:04:24 IST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void recruitmentPageTests.TestVacanciesCandidature.testsearchCandidature(java.util.HashMap) throws java.lang.InterruptedException]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- extentCreate -->
+        <test-method is-config="true" signature="recordFailure1(org.testng.ITestResult)[pri:0, instance:recruitmentPageTests.TestVacanciesCandidature@7098b907]" started-at="2023-10-05T19:04:34 IST" name="recordFailure1" finished-at="2023-10-05T19:04:34 IST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testsearchCandidature status=SUCCESS method=TestVacanciesCandidature.testsearchCandidature(java.util.HashMap)[pri:0, instance:recruitmentPageTests.TestVacanciesCandidature@7098b907] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- recordFailure1 -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:recruitmentPageTests.TestVacanciesCandidature@7098b907]" started-at="2023-10-05T19:04:34 IST" name="tearDown" finished-at="2023-10-05T19:04:35 IST" duration-ms="446" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- recruitmentPageTests.TestVacanciesCandidature -->
+      <class name="leaveTests.TestAddEntitlement">
+        <test-method is-config="true" signature="setup()[pri:0, instance:leaveTests.TestAddEntitlement@147e2ae7]" started-at="2023-10-05T18:56:58 IST" name="setup" finished-at="2023-10-05T18:57:10 IST" duration-ms="12204" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="testAddLeaveEntitlement(java.util.HashMap)[pri:0, instance:leaveTests.TestAddEntitlement@147e2ae7]" started-at="2023-10-05T18:57:10 IST" name="testAddLeaveEntitlement" data-provider="getDataFromExcel" finished-at="2023-10-05T18:57:31 IST" duration-ms="20782" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{Username=Admin, Password=admin123, Leave_Type=CAN - Vacation, Leave_count=50.0}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testAddLeaveEntitlement -->
+        <test-method is-config="true" signature="extentCreate(java.lang.reflect.Method)[pri:0, instance:leaveTests.TestAddEntitlement@147e2ae7]" started-at="2023-10-05T18:57:10 IST" name="extentCreate" finished-at="2023-10-05T18:57:10 IST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void leaveTests.TestAddEntitlement.testAddLeaveEntitlement(java.util.HashMap) throws java.lang.InterruptedException]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- extentCreate -->
+        <test-method is-config="true" signature="recordFailure1(org.testng.ITestResult)[pri:0, instance:leaveTests.TestAddEntitlement@147e2ae7]" started-at="2023-10-05T18:57:31 IST" name="recordFailure1" finished-at="2023-10-05T18:57:31 IST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testAddLeaveEntitlement status=SUCCESS method=TestAddEntitlement.testAddLeaveEntitlement(java.util.HashMap)[pri:0, instance:leaveTests.TestAddEntitlement@147e2ae7] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- recordFailure1 -->
+        <test-method signature="testAssignLeaveEntitlement(java.util.HashMap)[pri:0, instance:leaveTests.TestAddEntitlement@147e2ae7]" started-at="2023-10-05T18:57:31 IST" name="testAssignLeaveEntitlement" data-provider="getDataFromExcel" finished-at="2023-10-05T18:58:31 IST" duration-ms="59726" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{Username=Admin, Password=admin123, Leave_Type=CAN - Vacation, Leave_count=50.0}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testAssignLeaveEntitlement -->
+        <test-method is-config="true" signature="extentCreate(java.lang.reflect.Method)[pri:0, instance:leaveTests.TestAddEntitlement@147e2ae7]" started-at="2023-10-05T18:57:31 IST" name="extentCreate" finished-at="2023-10-05T18:57:31 IST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void leaveTests.TestAddEntitlement.testAssignLeaveEntitlement(java.util.HashMap) throws java.lang.InterruptedException]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- extentCreate -->
+        <test-method is-config="true" signature="recordFailure1(org.testng.ITestResult)[pri:0, instance:leaveTests.TestAddEntitlement@147e2ae7]" started-at="2023-10-05T18:58:31 IST" name="recordFailure1" finished-at="2023-10-05T18:58:31 IST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testAssignLeaveEntitlement status=SUCCESS method=TestAddEntitlement.testAssignLeaveEntitlement(java.util.HashMap)[pri:0, instance:leaveTests.TestAddEntitlement@147e2ae7] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- recordFailure1 -->
+        <test-method signature="testUpdateLeaveEntitlement(java.util.HashMap)[pri:0, instance:leaveTests.TestAddEntitlement@147e2ae7]" started-at="2023-10-05T18:58:31 IST" name="testUpdateLeaveEntitlement" data-provider="getDataFromExcel" finished-at="2023-10-05T18:59:23 IST" duration-ms="51993" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{Username=Admin, Password=admin123, Leave_Type=CAN - Vacation, Leave_count=50.0}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testUpdateLeaveEntitlement -->
+        <test-method is-config="true" signature="extentCreate(java.lang.reflect.Method)[pri:0, instance:leaveTests.TestAddEntitlement@147e2ae7]" started-at="2023-10-05T18:58:31 IST" name="extentCreate" finished-at="2023-10-05T18:58:31 IST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void leaveTests.TestAddEntitlement.testUpdateLeaveEntitlement(java.util.HashMap) throws java.lang.InterruptedException]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- extentCreate -->
+        <test-method is-config="true" signature="recordFailure1(org.testng.ITestResult)[pri:0, instance:leaveTests.TestAddEntitlement@147e2ae7]" started-at="2023-10-05T18:59:23 IST" name="recordFailure1" finished-at="2023-10-05T18:59:23 IST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testUpdateLeaveEntitlement status=SUCCESS method=TestAddEntitlement.testUpdateLeaveEntitlement(java.util.HashMap)[pri:0, instance:leaveTests.TestAddEntitlement@147e2ae7] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- recordFailure1 -->
+        <test-method signature="testValidateTabs(java.util.HashMap)[pri:0, instance:leaveTests.TestAddEntitlement@147e2ae7]" started-at="2023-10-05T18:59:23 IST" name="testValidateTabs" data-provider="getDataFromExcel" finished-at="2023-10-05T18:59:33 IST" duration-ms="10365" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{Username=Admin, Password=admin123, Leave_Type=CAN - Vacation, Leave_count=50.0}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testValidateTabs -->
+        <test-method is-config="true" signature="extentCreate(java.lang.reflect.Method)[pri:0, instance:leaveTests.TestAddEntitlement@147e2ae7]" started-at="2023-10-05T18:59:23 IST" name="extentCreate" finished-at="2023-10-05T18:59:23 IST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void leaveTests.TestAddEntitlement.testValidateTabs(java.util.HashMap) throws java.lang.InterruptedException]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- extentCreate -->
+        <test-method is-config="true" signature="recordFailure1(org.testng.ITestResult)[pri:0, instance:leaveTests.TestAddEntitlement@147e2ae7]" started-at="2023-10-05T18:59:33 IST" name="recordFailure1" finished-at="2023-10-05T18:59:33 IST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testValidateTabs status=SUCCESS method=TestAddEntitlement.testValidateTabs(java.util.HashMap)[pri:0, instance:leaveTests.TestAddEntitlement@147e2ae7] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- recordFailure1 -->
+        <test-method is-config="true" signature="extentCreate(java.lang.reflect.Method)[pri:0, instance:leaveTests.TestAddEntitlement@147e2ae7]" started-at="2023-10-05T18:59:33 IST" name="extentCreate" finished-at="2023-10-05T18:59:33 IST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void leaveTests.TestAddEntitlement.testViewLeaveReports(java.util.HashMap) throws java.lang.InterruptedException]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- extentCreate -->
+        <test-method signature="testViewLeaveReports(java.util.HashMap)[pri:0, instance:leaveTests.TestAddEntitlement@147e2ae7]" started-at="2023-10-05T18:59:33 IST" name="testViewLeaveReports" data-provider="getDataFromExcel" finished-at="2023-10-05T19:00:54 IST" duration-ms="80293" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{Username=Admin, Password=admin123, Leave_Type=CAN - Vacation, Leave_count=50.0}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testViewLeaveReports -->
+        <test-method is-config="true" signature="recordFailure1(org.testng.ITestResult)[pri:0, instance:leaveTests.TestAddEntitlement@147e2ae7]" started-at="2023-10-05T19:00:54 IST" name="recordFailure1" finished-at="2023-10-05T19:00:54 IST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testViewLeaveReports status=SUCCESS method=TestAddEntitlement.testViewLeaveReports(java.util.HashMap)[pri:0, instance:leaveTests.TestAddEntitlement@147e2ae7] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- recordFailure1 -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:leaveTests.TestAddEntitlement@147e2ae7]" started-at="2023-10-05T19:00:54 IST" name="tearDown" finished-at="2023-10-05T19:00:54 IST" duration-ms="610" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- leaveTests.TestAddEntitlement -->
       <class name="claimTests.TestOrangeCreateClaim">
-        <test-method is-config="true" signature="setup()[pri:0, instance:claimTests.TestOrangeCreateClaim@782859e]" started-at="2023-10-05T15:59:50 IST" name="setup" finished-at="2023-10-05T16:00:04 IST" duration-ms="14171" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:claimTests.TestOrangeCreateClaim@4f49f6af]" started-at="2023-10-05T19:02:12 IST" name="setup" finished-at="2023-10-05T19:02:24 IST" duration-ms="12256" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="testCancelclaim(java.util.HashMap)[pri:0, instance:claimTests.TestOrangeCreateClaim@782859e]" started-at="2023-10-05T16:00:04 IST" name="testCancelclaim" data-provider="getDataFromExcel" finished-at="2023-10-05T16:00:27 IST" duration-ms="22686" status="PASS">
+        <test-method is-config="true" signature="extentCreate(java.lang.reflect.Method)[pri:0, instance:claimTests.TestOrangeCreateClaim@4f49f6af]" started-at="2023-10-05T19:02:24 IST" name="extentCreate" finished-at="2023-10-05T19:02:24 IST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void claimTests.TestOrangeCreateClaim.testCancelclaim(java.util.HashMap) throws java.lang.InterruptedException]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- extentCreate -->
+        <test-method signature="testCancelclaim(java.util.HashMap)[pri:0, instance:claimTests.TestOrangeCreateClaim@4f49f6af]" started-at="2023-10-05T19:02:24 IST" name="testCancelclaim" data-provider="getDataFromExcel" finished-at="2023-10-05T19:02:36 IST" duration-ms="11796" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -590,18 +694,18 @@ at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:205)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testCancelclaim -->
-        <test-method is-config="true" signature="recordFailure(org.testng.ITestResult)[pri:0, instance:claimTests.TestOrangeCreateClaim@782859e]" started-at="2023-10-05T16:00:27 IST" name="recordFailure" finished-at="2023-10-05T16:00:27 IST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="recordFailure1(org.testng.ITestResult)[pri:0, instance:claimTests.TestOrangeCreateClaim@4f49f6af]" started-at="2023-10-05T19:02:36 IST" name="recordFailure1" finished-at="2023-10-05T19:02:36 IST" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=testCancelclaim status=SUCCESS method=TestOrangeCreateClaim.testCancelclaim(java.util.HashMap)[pri:0, instance:claimTests.TestOrangeCreateClaim@782859e] output={null}]]]>
+                <![CDATA[[TestResult name=testCancelclaim status=SUCCESS method=TestOrangeCreateClaim.testCancelclaim(java.util.HashMap)[pri:0, instance:claimTests.TestOrangeCreateClaim@4f49f6af] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- recordFailure -->
-        <test-method signature="testCreateClaim(java.util.HashMap)[pri:0, instance:claimTests.TestOrangeCreateClaim@782859e]" started-at="2023-10-05T16:00:27 IST" name="testCreateClaim" data-provider="getDataFromExcel" finished-at="2023-10-05T16:00:59 IST" duration-ms="31526" status="PASS">
+        </test-method> <!-- recordFailure1 -->
+        <test-method signature="testCreateClaim(java.util.HashMap)[pri:0, instance:claimTests.TestOrangeCreateClaim@4f49f6af]" started-at="2023-10-05T19:02:36 IST" name="testCreateClaim" data-provider="getDataFromExcel" finished-at="2023-10-05T19:03:05 IST" duration-ms="28933" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -612,18 +716,29 @@ at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:205)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testCreateClaim -->
-        <test-method is-config="true" signature="recordFailure(org.testng.ITestResult)[pri:0, instance:claimTests.TestOrangeCreateClaim@782859e]" started-at="2023-10-05T16:00:59 IST" name="recordFailure" finished-at="2023-10-05T16:00:59 IST" duration-ms="2" status="PASS">
+        <test-method is-config="true" signature="extentCreate(java.lang.reflect.Method)[pri:0, instance:claimTests.TestOrangeCreateClaim@4f49f6af]" started-at="2023-10-05T19:02:36 IST" name="extentCreate" finished-at="2023-10-05T19:02:36 IST" duration-ms="0" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=testCreateClaim status=SUCCESS method=TestOrangeCreateClaim.testCreateClaim(java.util.HashMap)[pri:0, instance:claimTests.TestOrangeCreateClaim@782859e] output={null}]]]>
+                <![CDATA[public void claimTests.TestOrangeCreateClaim.testCreateClaim(java.util.HashMap) throws java.lang.InterruptedException]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- recordFailure -->
-        <test-method signature="testCreateClaimRemarks(java.util.HashMap)[pri:0, instance:claimTests.TestOrangeCreateClaim@782859e]" started-at="2023-10-05T16:00:59 IST" name="testCreateClaimRemarks" data-provider="getDataFromExcel" finished-at="2023-10-05T16:01:13 IST" duration-ms="14555" status="PASS">
+        </test-method> <!-- extentCreate -->
+        <test-method is-config="true" signature="recordFailure1(org.testng.ITestResult)[pri:0, instance:claimTests.TestOrangeCreateClaim@4f49f6af]" started-at="2023-10-05T19:03:05 IST" name="recordFailure1" finished-at="2023-10-05T19:03:05 IST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testCreateClaim status=SUCCESS method=TestOrangeCreateClaim.testCreateClaim(java.util.HashMap)[pri:0, instance:claimTests.TestOrangeCreateClaim@4f49f6af] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- recordFailure1 -->
+        <test-method signature="testCreateClaimRemarks(java.util.HashMap)[pri:0, instance:claimTests.TestOrangeCreateClaim@4f49f6af]" started-at="2023-10-05T19:03:05 IST" name="testCreateClaimRemarks" data-provider="getDataFromExcel" finished-at="2023-10-05T19:03:17 IST" duration-ms="12293" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -634,28 +749,50 @@ at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:205)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testCreateClaimRemarks -->
-        <test-method is-config="true" signature="recordFailure(org.testng.ITestResult)[pri:0, instance:claimTests.TestOrangeCreateClaim@782859e]" started-at="2023-10-05T16:01:13 IST" name="recordFailure" finished-at="2023-10-05T16:01:13 IST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="extentCreate(java.lang.reflect.Method)[pri:0, instance:claimTests.TestOrangeCreateClaim@4f49f6af]" started-at="2023-10-05T19:03:05 IST" name="extentCreate" finished-at="2023-10-05T19:03:05 IST" duration-ms="0" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=testCreateClaimRemarks status=SUCCESS method=TestOrangeCreateClaim.testCreateClaimRemarks(java.util.HashMap)[pri:0, instance:claimTests.TestOrangeCreateClaim@782859e] output={null}]]]>
+                <![CDATA[public void claimTests.TestOrangeCreateClaim.testCreateClaimRemarks(java.util.HashMap) throws java.lang.InterruptedException]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- recordFailure -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:claimTests.TestOrangeCreateClaim@782859e]" started-at="2023-10-05T16:01:13 IST" name="tearDown" finished-at="2023-10-05T16:01:14 IST" duration-ms="617" status="PASS">
+        </test-method> <!-- extentCreate -->
+        <test-method is-config="true" signature="recordFailure1(org.testng.ITestResult)[pri:0, instance:claimTests.TestOrangeCreateClaim@4f49f6af]" started-at="2023-10-05T19:03:17 IST" name="recordFailure1" finished-at="2023-10-05T19:03:17 IST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testCreateClaimRemarks status=SUCCESS method=TestOrangeCreateClaim.testCreateClaimRemarks(java.util.HashMap)[pri:0, instance:claimTests.TestOrangeCreateClaim@4f49f6af] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- recordFailure1 -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:claimTests.TestOrangeCreateClaim@4f49f6af]" started-at="2023-10-05T19:03:17 IST" name="tearDown" finished-at="2023-10-05T19:03:18 IST" duration-ms="380" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- claimTests.TestOrangeCreateClaim -->
       <class name="claimTests.TestOrangeAssignClaim">
-        <test-method is-config="true" signature="setup()[pri:0, instance:claimTests.TestOrangeAssignClaim@3932c79a]" started-at="2023-10-05T15:54:34 IST" name="setup" finished-at="2023-10-05T15:54:48 IST" duration-ms="13982" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:claimTests.TestOrangeAssignClaim@21be3395]" started-at="2023-10-05T18:55:43 IST" name="setup" finished-at="2023-10-05T18:55:56 IST" duration-ms="12183" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="testAssignClaim(java.util.HashMap)[pri:0, instance:claimTests.TestOrangeAssignClaim@3932c79a]" started-at="2023-10-05T15:54:48 IST" name="testAssignClaim" data-provider="getDataFromExcel" finished-at="2023-10-05T15:55:42 IST" duration-ms="53175" status="PASS">
+        <test-method is-config="true" signature="extentCreate(java.lang.reflect.Method)[pri:0, instance:claimTests.TestOrangeAssignClaim@21be3395]" started-at="2023-10-05T18:55:56 IST" name="extentCreate" finished-at="2023-10-05T18:55:56 IST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void claimTests.TestOrangeAssignClaim.testAssignClaim(java.util.HashMap) throws java.lang.InterruptedException]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- extentCreate -->
+        <test-method signature="testAssignClaim(java.util.HashMap)[pri:0, instance:claimTests.TestOrangeAssignClaim@21be3395]" started-at="2023-10-05T18:55:56 IST" name="testAssignClaim" data-provider="getDataFromExcel" finished-at="2023-10-05T18:56:34 IST" duration-ms="38655" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -666,18 +803,29 @@ at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:205)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testAssignClaim -->
-        <test-method is-config="true" signature="recordFailure(org.testng.ITestResult)[pri:0, instance:claimTests.TestOrangeAssignClaim@3932c79a]" started-at="2023-10-05T15:55:42 IST" name="recordFailure" finished-at="2023-10-05T15:55:42 IST" duration-ms="5" status="PASS">
+        <test-method is-config="true" signature="recordFailure1(org.testng.ITestResult)[pri:0, instance:claimTests.TestOrangeAssignClaim@21be3395]" started-at="2023-10-05T18:56:34 IST" name="recordFailure1" finished-at="2023-10-05T18:56:34 IST" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=testAssignClaim status=SUCCESS method=TestOrangeAssignClaim.testAssignClaim(java.util.HashMap)[pri:0, instance:claimTests.TestOrangeAssignClaim@3932c79a] output={null}]]]>
+                <![CDATA[[TestResult name=testAssignClaim status=SUCCESS method=TestOrangeAssignClaim.testAssignClaim(java.util.HashMap)[pri:0, instance:claimTests.TestOrangeAssignClaim@21be3395] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- recordFailure -->
-        <test-method signature="testAssignClaimremarks(java.util.HashMap)[pri:0, instance:claimTests.TestOrangeAssignClaim@3932c79a]" started-at="2023-10-05T15:55:42 IST" name="testAssignClaimremarks" data-provider="getDataFromExcel" finished-at="2023-10-05T15:56:06 IST" depends-on-methods="claimTests.TestOrangeAssignClaim.testAssignClaim" duration-ms="24474" status="PASS">
+        </test-method> <!-- recordFailure1 -->
+        <test-method is-config="true" signature="extentCreate(java.lang.reflect.Method)[pri:0, instance:claimTests.TestOrangeAssignClaim@21be3395]" started-at="2023-10-05T18:56:34 IST" name="extentCreate" finished-at="2023-10-05T18:56:34 IST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void claimTests.TestOrangeAssignClaim.testAssignClaimremarks(java.util.HashMap) throws java.lang.InterruptedException]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- extentCreate -->
+        <test-method signature="testAssignClaimremarks(java.util.HashMap)[pri:0, instance:claimTests.TestOrangeAssignClaim@21be3395]" started-at="2023-10-05T18:56:34 IST" name="testAssignClaimremarks" data-provider="getDataFromExcel" finished-at="2023-10-05T18:56:57 IST" depends-on-methods="claimTests.TestOrangeAssignClaim.testAssignClaim" duration-ms="22950" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -688,21 +836,21 @@ at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:205)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testAssignClaimremarks -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:claimTests.TestOrangeAssignClaim@3932c79a]" started-at="2023-10-05T15:56:06 IST" name="tearDown" finished-at="2023-10-05T15:56:07 IST" duration-ms="618" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="recordFailure(org.testng.ITestResult)[pri:0, instance:claimTests.TestOrangeAssignClaim@3932c79a]" started-at="2023-10-05T15:56:06 IST" name="recordFailure" finished-at="2023-10-05T15:56:06 IST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="recordFailure1(org.testng.ITestResult)[pri:0, instance:claimTests.TestOrangeAssignClaim@21be3395]" started-at="2023-10-05T18:56:57 IST" name="recordFailure1" finished-at="2023-10-05T18:56:57 IST" duration-ms="0" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=testAssignClaimremarks status=SUCCESS method=TestOrangeAssignClaim.testAssignClaimremarks(java.util.HashMap)[pri:0, instance:claimTests.TestOrangeAssignClaim@3932c79a] output={null}]]]>
+                <![CDATA[[TestResult name=testAssignClaimremarks status=SUCCESS method=TestOrangeAssignClaim.testAssignClaimremarks(java.util.HashMap)[pri:0, instance:claimTests.TestOrangeAssignClaim@21be3395] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- recordFailure -->
+        </test-method> <!-- recordFailure1 -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:claimTests.TestOrangeAssignClaim@21be3395]" started-at="2023-10-05T18:56:57 IST" name="tearDown" finished-at="2023-10-05T18:56:58 IST" duration-ms="489" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
       </class> <!-- claimTests.TestOrangeAssignClaim -->
     </test> <!-- TestPackages -->
   </suite> <!-- Suite -->

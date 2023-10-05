@@ -12,26 +12,56 @@ public class TestVacanciesCandidature extends BaseTest {
 	// class variables
 	SoftAssert softAssert = new SoftAssert();
 	String vacancyName, randNum;
-	String fName, lName, mName, username, email;
+	String fName, lName, mName, username, email, password;
 
 	@Test(enabled = true, dataProvider = "getDataFromExcel")
 	public void testCreateVacancy(HashMap<String, String> data) throws InterruptedException {
 		// login to hrm
+
+		Random random = new Random();
+		randNum = String.format("%04d", random.nextInt(10000));
+		fName = data.get("FirstName") + randNum;
+		lName = data.get("LastName") + randNum;
+		mName = data.get("MiddleName") + randNum;
+
 		loginPage.setUserName(data.get("Username"));
 		loginPage.setPassword(data.get("Password"));
+
 		var homePage = loginPage.clickSubmit();
-		String loggedinUser = homePage.getLoggedInUser();
+		softAssert.assertEquals(true, homePage.isLogoDisplayed(), "Login");
+
+		var pimPage = homePage.clickPIMLink();
+		var addEmpPage = pimPage.clickOnAdd();
+		addEmpPage.setFirstName(fName);
+		addEmpPage.setMiddleName(mName);
+		addEmpPage.setLastName(lName);
+		addEmpPage.setEmployeeId(randNum);
+		System.out.println("Emp id : " + randNum);
+
+		addEmpPage.toggleCreateLogin();
+		username = fName.toLowerCase();
+		addEmpPage.setUsername(username);
+		password = fName + lName;
+		addEmpPage.setPassword(password);
+		addEmpPage.setConfirmPassword(password);
+		addEmpPage.clickOnSubmit();
+		Thread.sleep(2000);
+
+		softAssert.assertEquals(true, addEmpPage.isProfileUserNameDisplayed(), "User profile Name");
+
+		homePage = addEmpPage.goToHome();
+
 		var recruitmentPage = homePage.clickRecruitmentLink();
 		recruitmentPage.clickVacancies();
 		recruitmentPage.clickAddButton();
-		Random random = new Random();
-		randNum = String.format("%04d", random.nextInt(10000));
+
 		vacancyName = data.get("VacancyName") + randNum;
 		recruitmentPage.setVacancyName(vacancyName);// creating vacancy
 		recruitmentPage.setJobTitle(data.get("JobTitle"));
 		recruitmentPage.setDescription(data.get("Description"));
 		// recruitmentPage.setHiringManager(data.get("HiringManager"));
-		recruitmentPage.setHiringManager(loggedinUser);
+
+		recruitmentPage.setHiringManager(fName + " " + mName + " " + lName);
 		recruitmentPage.setNumberOfPositions(data.get("NumOfPositions"));
 		recruitmentPage.clickSave();
 
@@ -86,13 +116,13 @@ public class TestVacanciesCandidature extends BaseTest {
 
 	@Test(dependsOnMethods = "testCreateCandidate", dataProvider = "getDataFromExcel")
 	public void testsearchCandidature(HashMap<String, String> data) throws InterruptedException {
-		mName = data.get("MiddleName") + randNum;
+		/* mName = data.get("MiddleName") + randNum; */
 		loginPage.setUserName(data.get("Username"));
 		loginPage.setPassword(data.get("Password"));
 		var homePage = loginPage.clickSubmit();
 		var recruitmentPage = homePage.clickRecruitmentLink();
 		recruitmentPage.clickCandidates();
-		recruitmentPage.searchCandidateName(fName + " " + mName + " " + lName);
+		recruitmentPage.searchCandidateName(fName);
 		recruitmentPage.clickSave();
 		softAssert.assertEquals(recruitmentPage.isCandidatureFound(fName + " " + mName + " " + lName), true,
 				"Candidature Search");

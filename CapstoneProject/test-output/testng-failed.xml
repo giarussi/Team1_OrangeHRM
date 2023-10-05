@@ -3,25 +3,16 @@
 <suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="TestPackages(failed)">
     <classes>
-      <class name="leaveTests.TestAddEntitlement">
+      <class name="claimTests.TestOrangeCreateClaim">
         <methods>
           <include name="setup"/>
           <include name="tearDown"/>
-          <include name="testValidateTabs" invocation-numbers="0"/>
-          <include name="recordFailure"/>
+          <include name="extentCreate"/>
+          <include name="setupdriver"/>
+          <include name="recordFailure1"/>
+          <include name="testCreateClaimRemarks" invocation-numbers="0"/>
         </methods>
-      </class> <!-- leaveTests.TestAddEntitlement -->
-      <class name="recruitmentPageTests.TestVacanciesCandidature">
-        <methods>
-          <include name="setup"/>
-          <include name="tearDown"/>
-          <include name="testsearchCandidature"/>
-          <include name="testCreateCandidate"/>
-          <include name="testCreateVacancy" invocation-numbers="0"/>
-          <include name="testVacancySearch"/>
-          <include name="recordFailure"/>
-        </methods>
-      </class> <!-- recruitmentPageTests.TestVacanciesCandidature -->
+      </class> <!-- claimTests.TestOrangeCreateClaim -->
     </classes>
   </test> <!-- TestPackages(failed) -->
 </suite> <!-- Failed suite [Suite] -->

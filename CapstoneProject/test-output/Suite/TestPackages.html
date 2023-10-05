@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>TestPackages</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>15/2/3</td>
+<td>Tests passed/Failed/Skipped:</td><td>23/0/0</td>
 </tr><tr>
-<td>Started on:</td><td>Thu Oct 05 15:53:55 IST 2023</td>
+<td>Started on:</td><td>Thu Oct 05 18:55:15 IST 2023</td>
 </tr>
-<tr><td>Total time:</td><td>518 seconds (518063 ms)</td>
+<tr><td>Total time:</td><td>585 seconds (585780 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -67,195 +67,6 @@ function toggleAllBoxes() {
 </tr>
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
-<table width='100%' border='1' class='invocation-failed'>
-<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
-<tr><td><b>Test method</b></td>
-<td><b>Attribute(s)</b></td>
-<td width="30%"><b>Exception</b></td>
-<td width="10%"><b>Time (seconds)</b></td>
-<td><b>Instance</b></td>
-</tr>
-<tr>
-<td title='leaveTests.TestAddEntitlement.testValidateTabs()'><b>testValidateTabs</b><br>Test class: leaveTests.TestAddEntitlement<br>Parameters: {Username=Admin, Password=admin123}</td>
-<td><div><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for presence of element located by: By.name: username (tried for 10 second(s) with 500 milliseconds interval)
-	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:230)
-	at pages.O_LoginPage.setUserName(O_LoginPage.java:36)
-	at leaveTests.TestAddEntitlement.testValidateTabs(TestAddEntitlement.java:13)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;*[name=&apos;username&apos;]&quot;}
-  (Session info: chrome=117.0.5938.149)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
-Build info: version: &apos;4.11.0&apos;, revision: &apos;040bc5406b&apos;
-System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.8&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [27a3a263566ca073a7a357d22e7e401c, findElement {using=name, value=username}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 117.0.5938.149, chrome: {chromedriverVersion: 117.0.5938.149 (e3344ddefa1..., userDataDir: C:\Users\U1230894\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51751}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:51751/devtoo..., se:cdpVersion: 117.0.5938.149, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 27a3a263566ca073a7a357d22e7e401c
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:349)
-	at org.openqa.selenium.support.ui.ExpectedConditions$6.apply(ExpectedConditions.java:171)
-	at org.openqa.selenium.support.ui.ExpectedConditions$6.apply(ExpectedConditions.java:168)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:205)
-	... 30 more
-... Removed 31 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1842482889", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1842482889'><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for presence of element located by: By.name: username (tried for 10 second(s) with 500 milliseconds interval)
-	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:230)
-	at pages.O_LoginPage.setUserName(O_LoginPage.java:36)
-	at leaveTests.TestAddEntitlement.testValidateTabs(TestAddEntitlement.java:13)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at org.testng.TestRunner.privateRun(TestRunner.java:848)
-	at org.testng.TestRunner.run(TestRunner.java:621)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
-	at org.testng.TestNG.runSuites(TestNG.java:1114)
-	at org.testng.TestNG.run(TestNG.java:1082)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;*[name=&apos;username&apos;]&quot;}
-  (Session info: chrome=117.0.5938.149)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
-Build info: version: &apos;4.11.0&apos;, revision: &apos;040bc5406b&apos;
-System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.8&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [27a3a263566ca073a7a357d22e7e401c, findElement {using=name, value=username}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 117.0.5938.149, chrome: {chromedriverVersion: 117.0.5938.149 (e3344ddefa1..., userDataDir: C:\Users\U1230894\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51751}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:51751/devtoo..., se:cdpVersion: 117.0.5938.149, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 27a3a263566ca073a7a357d22e7e401c
-	at jdk.internal.reflect.GeneratedConstructorAccessor26.newInstance(Unknown Source)
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:349)
-	at org.openqa.selenium.support.ui.ExpectedConditions$6.apply(ExpectedConditions.java:171)
-	at org.openqa.selenium.support.ui.ExpectedConditions$6.apply(ExpectedConditions.java:168)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:205)
-	... 30 more
-</pre></div></td>
-<td>10</td>
-<td>leaveTests.TestAddEntitlement@34bde49d</td></tr>
-<tr>
-<td title='recruitmentPageTests.TestVacanciesCandidature.testCreateVacancy()'><b>testCreateVacancy</b><br>Test class: recruitmentPageTests.TestVacanciesCandidature<br>Parameters: {Username=Admin, Password=admin123, VacancyName=Vacancy for CapstoneProject, JobTitle=QA Lead, Description=Automation Tester, HiringManager=Orange Test, NumOfPositions=2}</td>
-<td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//div[@class=&apos;oxd-autocomplete-option&apos;]&quot;}
-  (Session info: chrome=117.0.5938.149)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
-Build info: version: &apos;4.11.0&apos;, revision: &apos;040bc5406b&apos;
-System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.8&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [8325dd918c773bfb998c76f28586b8d6, findElement {using=xpath, value=//div[@class=&apos;oxd-autocomplete-option&apos;]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 117.0.5938.149, chrome: {chromedriverVersion: 117.0.5938.149 (e3344ddefa1..., userDataDir: C:\Users\U1230894\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:52154}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:52154/devtoo..., se:cdpVersion: 117.0.5938.149, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 8325dd918c773bfb998c76f28586b8d6
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:349)
-	at pages.O_RecruitmentPage.setHiringManager(O_RecruitmentPage.java:111)
-	at recruitmentPageTests.TestVacanciesCandidature.testCreateVacancy(TestVacanciesCandidature.java:34)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 31 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1654094587", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1654094587'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//div[@class=&apos;oxd-autocomplete-option&apos;]&quot;}
-  (Session info: chrome=117.0.5938.149)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
-Build info: version: &apos;4.11.0&apos;, revision: &apos;040bc5406b&apos;
-System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.8&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [8325dd918c773bfb998c76f28586b8d6, findElement {using=xpath, value=//div[@class=&apos;oxd-autocomplete-option&apos;]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 117.0.5938.149, chrome: {chromedriverVersion: 117.0.5938.149 (e3344ddefa1..., userDataDir: C:\Users\U1230894\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:52154}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:52154/devtoo..., se:cdpVersion: 117.0.5938.149, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 8325dd918c773bfb998c76f28586b8d6
-	at jdk.internal.reflect.GeneratedConstructorAccessor26.newInstance(Unknown Source)
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:349)
-	at pages.O_RecruitmentPage.setHiringManager(O_RecruitmentPage.java:111)
-	at recruitmentPageTests.TestVacanciesCandidature.testCreateVacancy(TestVacanciesCandidature.java:34)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at org.testng.TestRunner.privateRun(TestRunner.java:848)
-	at org.testng.TestRunner.run(TestRunner.java:621)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
-	at org.testng.TestNG.runSuites(TestNG.java:1114)
-	at org.testng.TestNG.run(TestNG.java:1082)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div></td>
-<td>22</td>
-<td>recruitmentPageTests.TestVacanciesCandidature@5db6b9cd</td></tr>
-</table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
 <tr><td><b>Test method</b></td>
@@ -265,179 +76,120 @@ Session ID: 8325dd918c773bfb998c76f28586b8d6
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='homePageTests.TestHomePageSections.testDashboardSections()'><b>testDashboardSections</b><br>Test class: homePageTests.TestHomePageSections<br>Parameters: {Username=Admin, Password=admin123, Sections=Time at Work;My Actions;Quick Launch;Buzz Latest Posts;Employees on Leave Today;Employee Distribution by Sub Unit;Employee Distribution by Location}</td>
+<td title='leaveTests.TestAddEntitlement.testAssignLeaveEntitlement()'><b>testAssignLeaveEntitlement</b><br>Test class: leaveTests.TestAddEntitlement<br>Parameters: {Username=Admin, Password=admin123, Leave_Type=CAN - Vacation, Leave_count=50.0}</td>
 <td></td>
-<td>13</td>
-<td>homePageTests.TestHomePageSections@821330f</td></tr>
+<td>59</td>
+<td>leaveTests.TestAddEntitlement@147e2ae7</td></tr>
 <tr>
-<td title='claimTests.TestOrangeAssignClaim.testAssignClaimremarks()'><b>testAssignClaimremarks</b><br>Test class: claimTests.TestOrangeAssignClaim<br>Parameters: {Username=Admin, Password=admin123, Event_select=Travel Allowance, Currency_select=Afghanistan Afghani, Remarks=Added Claim , FirstName=Christian, MiddleName=John, LastName=Bale, =}</td>
+<td title='leaveTests.TestAddEntitlement.testUpdateLeaveEntitlement()'><b>testUpdateLeaveEntitlement</b><br>Test class: leaveTests.TestAddEntitlement<br>Parameters: {Username=Admin, Password=admin123, Leave_Type=CAN - Vacation, Leave_count=50.0}</td>
 <td></td>
-<td>24</td>
-<td>claimTests.TestOrangeAssignClaim@3932c79a</td></tr>
+<td>51</td>
+<td>leaveTests.TestAddEntitlement@147e2ae7</td></tr>
 <tr>
-<td title='pimTests.TestPIMFunctionality.testCreateUser()'><b>testCreateUser</b><br>Test class: pimTests.TestPIMFunctionality<br>Parameters: {Username=Admin, Password=admin123, FirstName=Harry, MiddleName=James, LastName=Potter}</td>
+<td title='leaveTests.TestAddEntitlement.testValidateTabs()'><b>testValidateTabs</b><br>Test class: leaveTests.TestAddEntitlement<br>Parameters: {Username=Admin, Password=admin123, Leave_Type=CAN - Vacation, Leave_count=50.0}</td>
 <td></td>
-<td>26</td>
-<td>pimTests.TestPIMFunctionality@1b1cfb87</td></tr>
+<td>10</td>
+<td>leaveTests.TestAddEntitlement@147e2ae7</td></tr>
 <tr>
-<td title='claimTests.TestOrangeDashboardClaim.testClaimDashboard()'><b>testClaimDashboard</b><br>Test class: claimTests.TestOrangeDashboardClaim<br>Parameters: {Username=Admin, Password=admin123, Header1=Submit Claim, Header2=My Claims, Header3=Employee Claims, Header4=Assign Claim, Header5=Configuration}</td>
+<td title='pimTests.TestPIMFunctionality.testPIMPageLinks()'><b>testPIMPageLinks</b><br>Test class: pimTests.TestPIMFunctionality<br>Parameters: {Username=Admin, Password=admin123, TabNames=Employee List;Add Employee;Reports}</td>
 <td></td>
-<td>24</td>
-<td>claimTests.TestOrangeDashboardClaim@23f5b5dc</td></tr>
+<td>5</td>
+<td>pimTests.TestPIMFunctionality@448c8166</td></tr>
 <tr>
-<td title='claimTests.TestOrangeAssignClaim.testAssignClaim()'><b>testAssignClaim</b><br>Test class: claimTests.TestOrangeAssignClaim<br>Parameters: {Username=Admin, Password=admin123, Event_select=Travel Allowance, Currency_select=Afghanistan Afghani, Remarks=Added Claim , FirstName=Christian, MiddleName=John, LastName=Bale}</td>
+<td title='pimTests.TestPIMFunctionality.testCustomUserLogin()'><b>testCustomUserLogin</b><br>Test class: pimTests.TestPIMFunctionality</td>
 <td></td>
-<td>53</td>
-<td>claimTests.TestOrangeAssignClaim@3932c79a</td></tr>
+<td>2</td>
+<td>pimTests.TestPIMFunctionality@448c8166</td></tr>
+<tr>
+<td title='recruitmentPageTests.TestVacanciesCandidature.testVacancySearch()'><b>testVacancySearch</b><br>Test class: recruitmentPageTests.TestVacanciesCandidature<br>Parameters: {Username=Admin, Password=admin123}</td>
+<td></td>
+<td>9</td>
+<td>recruitmentPageTests.TestVacanciesCandidature@7098b907</td></tr>
 <tr>
 <td title='loginTests.TestOrangeUserLogin.testInvalidAdminLogin()'><b>testInvalidAdminLogin</b><br>Test class: loginTests.TestOrangeUserLogin<br>Parameters: {Username=invalidUserName, Password=invalidPassword}</td>
 <td></td>
-<td>10</td>
-<td>loginTests.TestOrangeUserLogin@79207381</td></tr>
+<td>2</td>
+<td>loginTests.TestOrangeUserLogin@7dc3712</td></tr>
 <tr>
-<td title='leaveTests.TestAddEntitlement.testLeaveEntitlement()'><b>testLeaveEntitlement</b><br>Test class: leaveTests.TestAddEntitlement<br>Parameters: {Username=Admin, Password=admin123, Leave_Type=CAN - Vacation}</td>
+<td title='recruitmentPageTests.TestVacanciesCandidature.testCreateCandidate()'><b>testCreateCandidate</b><br>Test class: recruitmentPageTests.TestVacanciesCandidature<br>Parameters: {Username=Admin, Password=admin123, FirstName=Ron, MiddleName=Arthur, LastName=Weasley, Email=ron@example.com}</td>
 <td></td>
-<td>83</td>
-<td>leaveTests.TestAddEntitlement@34bde49d</td></tr>
+<td>15</td>
+<td>recruitmentPageTests.TestVacanciesCandidature@7098b907</td></tr>
 <tr>
-<td title='claimTests.TestOrangeCreateClaim.testCreateClaim()'><b>testCreateClaim</b><br>Test class: claimTests.TestOrangeCreateClaim<br>Parameters: {Username=Admin, Password=admin123, Event_select=Travel Allowance, Currency_select=Afghanistan Afghani, =, Remarks=Added Claim , Notes=Added expense, Amount=2000.0}</td>
+<td title='claimTests.TestOrangeCreateClaim.testCreateClaimRemarks()'><b>testCreateClaimRemarks</b><br>Test class: claimTests.TestOrangeCreateClaim<br>Parameters: {Username=Admin, Password=admin123, Event_select=Travel Allowance, Currency_select=Afghanistan Afghani, =, Remarks=Added Claim , Notes=Added expense, Amount=2000.0}</td>
 <td></td>
-<td>31</td>
-<td>claimTests.TestOrangeCreateClaim@782859e</td></tr>
+<td>12</td>
+<td>claimTests.TestOrangeCreateClaim@4f49f6af</td></tr>
 <tr>
 <td title='loginTests.TestOrangeUserLogin.testValidAdminLogin()'><b>testValidAdminLogin</b><br>Test class: loginTests.TestOrangeUserLogin<br>Parameters: {Username=admin, Password=admin123}</td>
 <td></td>
 <td>4</td>
-<td>loginTests.TestOrangeUserLogin@79207381</td></tr>
+<td>loginTests.TestOrangeUserLogin@7dc3712</td></tr>
 <tr>
-<td title='pimTests.TestPIMFunctionality.testCustomUserLogin()'><b>testCustomUserLogin</b><br>Test class: pimTests.TestPIMFunctionality</td>
+<td title='pimTests.TestPIMFunctionality.testCreateUser()'><b>testCreateUser</b><br>Test class: pimTests.TestPIMFunctionality<br>Parameters: {Username=Admin, Password=admin123, FirstName=Harry, MiddleName=James, LastName=Potter}</td>
 <td></td>
-<td>3</td>
-<td>pimTests.TestPIMFunctionality@1b1cfb87</td></tr>
+<td>15</td>
+<td>pimTests.TestPIMFunctionality@448c8166</td></tr>
 <tr>
-<td title='recruitmentPageTests.TestRecruitmentPageTabs.testRecruitmentPageTabs()'><b>testRecruitmentPageTabs</b><br>Test class: recruitmentPageTests.TestRecruitmentPageTabs<br>Parameters: {Username=Admin, Password=admin123, Tabs=Candidates;Vacancies}</td>
+<td title='claimTests.TestOrangeCreateClaim.testCreateClaim()'><b>testCreateClaim</b><br>Test class: claimTests.TestOrangeCreateClaim<br>Parameters: {Username=Admin, Password=admin123, Event_select=Travel Allowance, Currency_select=Afghanistan Afghani, =, Remarks=Added Claim , Notes=Added expense, Amount=2000.0}</td>
 <td></td>
-<td>18</td>
-<td>recruitmentPageTests.TestRecruitmentPageTabs@6f43c82</td></tr>
+<td>28</td>
+<td>claimTests.TestOrangeCreateClaim@4f49f6af</td></tr>
 <tr>
-<td title='claimTests.TestOrangeCreateClaim.testCreateClaimRemarks()'><b>testCreateClaimRemarks</b><br>Test class: claimTests.TestOrangeCreateClaim<br>Parameters: {Username=Admin, Password=admin123, Event_select=Travel Allowance, Currency_select=Afghanistan Afghani, =, Remarks=Added Claim , Notes=Added expense, Amount=2000.0}</td>
+<td title='homePageTests.TestHomePageSections.testDashboardSections()'><b>testDashboardSections</b><br>Test class: homePageTests.TestHomePageSections<br>Parameters: {Username=Admin, Password=admin123, Sections=Time at Work;My Actions;Quick Launch;Buzz Latest Posts;Employees on Leave Today;Employee Distribution by Sub Unit;Employee Distribution by Location}</td>
 <td></td>
-<td>14</td>
-<td>claimTests.TestOrangeCreateClaim@782859e</td></tr>
+<td>4</td>
+<td>homePageTests.TestHomePageSections@4470fbd6</td></tr>
 <tr>
-<td title='loginTests.TestOrangeUserLogin.testValidAdminLogin()'><b>testValidAdminLogin</b><br>Test class: loginTests.TestOrangeUserLogin<br>Parameters: {Username=Admin, Password=admin123}</td>
+<td title='recruitmentPageTests.TestVacanciesCandidature.testsearchCandidature()'><b>testsearchCandidature</b><br>Test class: recruitmentPageTests.TestVacanciesCandidature<br>Parameters: {Username=Admin, Password=admin123, FirstName=Ron, MiddleName=Arthur, LastName=Weasley, Email=ron@example.com}</td>
 <td></td>
-<td>5</td>
-<td>loginTests.TestOrangeUserLogin@79207381</td></tr>
-<tr>
-<td title='pimTests.TestPIMFunctionality.testPIMPageLinks()'><b>testPIMPageLinks</b><br>Test class: pimTests.TestPIMFunctionality<br>Parameters: {Username=Admin, Password=admin123, TabNames=Employee List;Add Employee;Reports}</td>
-<td></td>
-<td>7</td>
-<td>pimTests.TestPIMFunctionality@1b1cfb87</td></tr>
+<td>10</td>
+<td>recruitmentPageTests.TestVacanciesCandidature@7098b907</td></tr>
 <tr>
 <td title='claimTests.TestOrangeCreateClaim.testCancelclaim()'><b>testCancelclaim</b><br>Test class: claimTests.TestOrangeCreateClaim<br>Parameters: {Username=Admin, Password=admin123, Event_select=Travel Allowance, Currency_select=Afghanistan Afghani, Remarks=Added Claim}</td>
 <td></td>
+<td>11</td>
+<td>claimTests.TestOrangeCreateClaim@4f49f6af</td></tr>
+<tr>
+<td title='leaveTests.TestAddEntitlement.testViewLeaveReports()'><b>testViewLeaveReports</b><br>Test class: leaveTests.TestAddEntitlement<br>Parameters: {Username=Admin, Password=admin123, Leave_Type=CAN - Vacation, Leave_count=50.0}</td>
+<td></td>
+<td>80</td>
+<td>leaveTests.TestAddEntitlement@147e2ae7</td></tr>
+<tr>
+<td title='recruitmentPageTests.TestRecruitmentPageTabs.testRecruitmentPageTabs()'><b>testRecruitmentPageTabs</b><br>Test class: recruitmentPageTests.TestRecruitmentPageTabs<br>Parameters: {Username=Admin, Password=admin123, Tabs=Candidates;Vacancies}</td>
+<td></td>
+<td>11</td>
+<td>recruitmentPageTests.TestRecruitmentPageTabs@15d49048</td></tr>
+<tr>
+<td title='loginTests.TestOrangeUserLogin.testValidAdminLogin()'><b>testValidAdminLogin</b><br>Test class: loginTests.TestOrangeUserLogin<br>Parameters: {Username=Admin, Password=admin123}</td>
+<td></td>
+<td>4</td>
+<td>loginTests.TestOrangeUserLogin@7dc3712</td></tr>
+<tr>
+<td title='leaveTests.TestAddEntitlement.testAddLeaveEntitlement()'><b>testAddLeaveEntitlement</b><br>Test class: leaveTests.TestAddEntitlement<br>Parameters: {Username=Admin, Password=admin123, Leave_Type=CAN - Vacation, Leave_count=50.0}</td>
+<td></td>
+<td>20</td>
+<td>leaveTests.TestAddEntitlement@147e2ae7</td></tr>
+<tr>
+<td title='claimTests.TestOrangeDashboardClaim.testClaimDashboard()'><b>testClaimDashboard</b><br>Test class: claimTests.TestOrangeDashboardClaim<br>Parameters: {Username=Admin, Password=admin123, Header1=Submit Claim, Header2=My Claims, Header3=Employee Claims, Header4=Assign Claim, Header5=Configuration}</td>
+<td></td>
+<td>13</td>
+<td>claimTests.TestOrangeDashboardClaim@78452606</td></tr>
+<tr>
+<td title='claimTests.TestOrangeAssignClaim.testAssignClaim()'><b>testAssignClaim</b><br>Test class: claimTests.TestOrangeAssignClaim<br>Parameters: {Username=Admin, Password=admin123, Event_select=Travel Allowance, Currency_select=Afghanistan Afghani, Remarks=Added Claim , FirstName=Christian, MiddleName=John, LastName=Bale}</td>
+<td></td>
+<td>38</td>
+<td>claimTests.TestOrangeAssignClaim@21be3395</td></tr>
+<tr>
+<td title='recruitmentPageTests.TestVacanciesCandidature.testCreateVacancy()'><b>testCreateVacancy</b><br>Test class: recruitmentPageTests.TestVacanciesCandidature<br>Parameters: {Username=Admin, Password=admin123, VacancyName=Vacancy for CapstoneProject, JobTitle=QA Lead, Description=Automation Tester, HiringManager=Orange Test, NumOfPositions=2, FirstName=Hermoine, MiddleName=Jean, LastName=Granger}</td>
+<td></td>
+<td>29</td>
+<td>recruitmentPageTests.TestVacanciesCandidature@7098b907</td></tr>
+<tr>
+<td title='claimTests.TestOrangeAssignClaim.testAssignClaimremarks()'><b>testAssignClaimremarks</b><br>Test class: claimTests.TestOrangeAssignClaim<br>Parameters: {Username=Admin, Password=admin123, Event_select=Travel Allowance, Currency_select=Afghanistan Afghani, Remarks=Added Claim , FirstName=Christian, MiddleName=John, LastName=Bale, =}</td>
+<td></td>
 <td>22</td>
-<td>claimTests.TestOrangeCreateClaim@782859e</td></tr>
-</table><p>
-<table width='100%' border='1' class='invocation-skipped'>
-<tr><td colspan='4' align='center'><b>SKIPPED TESTS</b></td></tr>
-<tr><td><b>Test method</b></td>
-<td><b>Attribute(s)</b></td>
-<td width="30%"><b>Exception</b></td>
-<td width="10%"><b>Time (seconds)</b></td>
-<td><b>Instance</b></td>
-</tr>
-<tr>
-<td title='recruitmentPageTests.TestVacanciesCandidature.testCreateCandidate()'><b>testCreateCandidate</b><br>Test class: recruitmentPageTests.TestVacanciesCandidature</td>
-<td><div><pre>java.lang.Throwable: Method recruitmentPageTests.TestVacanciesCandidature.testCreateCandidate() on instance recruitmentPageTests.TestVacanciesCandidature@5db6b9cd depends on not successfully finished methods 
-[recruitmentPageTests.TestVacanciesCandidature.testVacancySearch() on instance recruitmentPageTests.TestVacanciesCandidature@5db6b9cd]
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 18 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace760159709", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace760159709'><pre>java.lang.Throwable: Method recruitmentPageTests.TestVacanciesCandidature.testCreateCandidate() on instance recruitmentPageTests.TestVacanciesCandidature@5db6b9cd depends on not successfully finished methods 
-[recruitmentPageTests.TestVacanciesCandidature.testVacancySearch() on instance recruitmentPageTests.TestVacanciesCandidature@5db6b9cd]
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:156)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at org.testng.TestRunner.privateRun(TestRunner.java:848)
-	at org.testng.TestRunner.run(TestRunner.java:621)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
-	at org.testng.TestNG.runSuites(TestNG.java:1114)
-	at org.testng.TestNG.run(TestNG.java:1082)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div></td>
-<td>0</td>
-<td>recruitmentPageTests.TestVacanciesCandidature@5db6b9cd</td></tr>
-<tr>
-<td title='recruitmentPageTests.TestVacanciesCandidature.testVacancySearch()'><b>testVacancySearch</b><br>Test class: recruitmentPageTests.TestVacanciesCandidature</td>
-<td><div><pre>java.lang.Throwable: Method recruitmentPageTests.TestVacanciesCandidature.testVacancySearch() on instance recruitmentPageTests.TestVacanciesCandidature@5db6b9cd depends on not successfully finished methods 
-[recruitmentPageTests.TestVacanciesCandidature.testCreateVacancy() on instance recruitmentPageTests.TestVacanciesCandidature@5db6b9cd]
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 18 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1056439044", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1056439044'><pre>java.lang.Throwable: Method recruitmentPageTests.TestVacanciesCandidature.testVacancySearch() on instance recruitmentPageTests.TestVacanciesCandidature@5db6b9cd depends on not successfully finished methods 
-[recruitmentPageTests.TestVacanciesCandidature.testCreateVacancy() on instance recruitmentPageTests.TestVacanciesCandidature@5db6b9cd]
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:156)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at org.testng.TestRunner.privateRun(TestRunner.java:848)
-	at org.testng.TestRunner.run(TestRunner.java:621)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
-	at org.testng.TestNG.runSuites(TestNG.java:1114)
-	at org.testng.TestNG.run(TestNG.java:1082)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div></td>
-<td>0</td>
-<td>recruitmentPageTests.TestVacanciesCandidature@5db6b9cd</td></tr>
-<tr>
-<td title='recruitmentPageTests.TestVacanciesCandidature.testsearchCandidature()'><b>testsearchCandidature</b><br>Test class: recruitmentPageTests.TestVacanciesCandidature</td>
-<td><div><pre>java.lang.Throwable: Method recruitmentPageTests.TestVacanciesCandidature.testsearchCandidature() on instance recruitmentPageTests.TestVacanciesCandidature@5db6b9cd depends on not successfully finished methods 
-[recruitmentPageTests.TestVacanciesCandidature.testCreateCandidate() on instance recruitmentPageTests.TestVacanciesCandidature@5db6b9cd]
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 18 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1525055237", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1525055237'><pre>java.lang.Throwable: Method recruitmentPageTests.TestVacanciesCandidature.testsearchCandidature() on instance recruitmentPageTests.TestVacanciesCandidature@5db6b9cd depends on not successfully finished methods 
-[recruitmentPageTests.TestVacanciesCandidature.testCreateCandidate() on instance recruitmentPageTests.TestVacanciesCandidature@5db6b9cd]
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:156)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at org.testng.TestRunner.privateRun(TestRunner.java:848)
-	at org.testng.TestRunner.run(TestRunner.java:621)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
-	at org.testng.TestNG.runSuites(TestNG.java:1114)
-	at org.testng.TestNG.run(TestNG.java:1082)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div></td>
-<td>0</td>
-<td>recruitmentPageTests.TestVacanciesCandidature@5db6b9cd</td></tr>
+<td>claimTests.TestOrangeAssignClaim@21be3395</td></tr>
 </table><p>
 </body>
 </html>
